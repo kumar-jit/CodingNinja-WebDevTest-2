@@ -1,0 +1,817 @@
+/* -------------------------------------------------------------------------- */
+/*                            Varaible Decleration                            */
+/* -------------------------------------------------------------------------- */
+:root{
+
+    --primary-color: #fcfcfc;
+    --secondary-color: #ffffff;
+    --third-color: #93a8b3;
+    --fourth-color: #1d2775;
+    --fifth-color: #000000;
+    --sixth-color: #000000;
+    --seventh-color: #000000;
+    --eighth-color: #000000;
+
+    /* font color */
+    --font-color-1: #080808;
+    --font-color-2: #93a8b3;
+    --font-color-3: #949494;
+    --font-color-4: #949494;
+    --font-color-5: #464646;
+    --font-color-6: #646464;
+    --font-color-7: #2c4255;
+
+    /* font-size */
+    --font-size-title: 1rem;
+    --font-size-subtitle: 0.8rem;
+
+    /* font-size-paragraph */
+    --font-size-paragraph: 1rem;
+    --font-size-small-paragraph: 0.9rem;
+    --font-size-smaller-paragraph: 0.8rem;
+    --font-size-smallest-paragraph: 0.7rem;
+    --font-size-smallest-paragraph-2: 0.6rem;
+    --font-size-smallest-paragraph-3: 0.4rem;
+    --font-size-smallest-paragraph-4: 0.2rem;
+
+    /* font-weight */
+    --font-weight-title: 700;
+    --font-weight-subtitle: 550;
+    --font-weight-paragraph: 300;
+    --font-weight-small-paragraph: 200;
+    --font-weight-smaller-paragraph: 100;
+    --font-weight-smallest-paragraph: 50;
+
+
+    /* button front */
+    --font-button-size-small: 1rem;
+    --font-button-size-noraml: 1rem;
+    --font-button-size-large: 1.5rem;
+    --font-button-size-largest: 2rem;
+
+
+    --nav-height: 15vh;
+    --main-body-Left-width: 55vw;
+    --main-body-Right-width: 30vw;
+}
+
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    font-size: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Nav Bar                                  */
+/* -------------------------------------------------------------------------- */
+
+.nav-bar{
+    width: 100vw;
+    height: var(--nav-height);
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid rgb(219, 85, 85); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 3vw;
+    box-sizing: border-box;
+}
+
+/* --------------------------- navBar common class -------------------------- */
+.nav-bar-inner-container{
+    display: flex;
+    height: calc(var(--nav-height) -2vh);
+    align-items: center;
+    
+}
+
+
+ /* ---------------------------- Nav-bar Left container --------------------------- */
+.nav-bar-left-container{
+    justify-content: start;
+}
+.nav-bar-left-container > *{
+    margin-right: 2rem;
+}
+
+.navBar-ul{
+    margin: 0px;
+    padding: 0px;
+}
+.navBar-ul > li{
+    list-style-type: none;
+}
+
+#logo{
+    height: 3.5rem;
+    background-color: #93a8b3;
+}
+
+/* ------------------------- NavBAr Right container ------------------------- */
+.nav-bar-right-container{
+    justify-content: end;
+}
+.nav-bar-right-container > * {
+    margin-left: 2rem; /* Add spacing between elements */
+}
+
+/* navbar song search box */
+.nav-search-box{
+    display: flex;
+    background-color: #1d2775;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.nav-search-box > *{
+    border: none;
+    background-color: transparent;
+}
+
+.nav-notification {
+    border: none;
+    background: transparent;
+    font-size: 1.6rem;
+}
+.nav-notification::after{
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-100%,50%);
+}
+/* navbar profile picture */
+#user-profile-img{
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Main body (Explore Area)                          */
+/* -------------------------------------------------------------------------- */
+
+.main-body {
+    /* border: 1px solid black; */
+    height: calc(100vh - var(--nav-height));
+    padding: 0 7%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    /* border: 1px solid red; */
+}
+
+.body-content-height{
+    height: calc(100vh - var(--nav-height));
+    box-sizing: border-box;
+}
+.scroll-content{
+    scroll-behavior: auto;
+    overflow: scroll;
+}
+.scroll-content::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
+
+/* ------------------------------ Song Collection Left Side ------------------------------ */
+#main-body-left{
+    width: 60%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+/* ------------------------------- Song Queue Right Side ------------------------------- */
+#main-body-right{
+    width: 35%;
+}
+
+
+/* ------------------------------ Poster image ------------------------------ */
+.poster-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 0px;
+    align-items: center;
+    height: fit-content;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 200px;
+}
+
+.poster-img {
+    width: 30%; /* Set your initial image width */
+    transition: all 0.3s ease;
+    border: 1px solid rgb(202, 19, 162);
+}
+
+.poster-img:hover {
+    width: 35%;
+}
+.poster-content:hover .poster-img:not(:hover) {
+    width: 27%;
+    border: 2px solid #dfdb16;
+}
+
+/* #img1:hover {
+    transform: scale(1.2) translate(10%);
+}
+
+#img2:hover {
+    transform: scale(1.2);
+}
+
+#img3:hover {
+    transform: scale(1.2) translate(-10%);
+} */
+
+
+/* .poster-content:hover :nth-child(2n){
+    transform: scale(0.8) translateX(20%);
+    box-sizing: border-box;
+    border: 3px solid green;
+}
+.poster-content:hover :nth-child(2n+1) {
+    transform: scale(0.8);
+    box-sizing: border-box;
+    border: 3px solid red;
+} */
+
+/* ------------------------------- collection ------------------------------- */
+.collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.collection-heading{
+    margin: 0.5rem 0px;
+    padding: 0px;
+    /* font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title); */
+    color: var(--font-color-1);
+}
+/* removing default padding from header tag */
+.collection-heading > h4,h3,h2{
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid black; */
+}
+
+
+.collection-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.collection-content-justfy-Space-Between{
+    justify-content: space-between;
+}
+
+.collection-content-justfy-Space-Around{
+    justify-content: space-around;
+}
+
+.collection-content-justfy-Space-Evenly{
+    justify-content: space-evenly;
+}
+
+.collection-content-justfy-Center{
+    justify-content: center;
+}
+
+.collection-content-justfy-End{
+    justify-content: end;
+}
+
+/* ----------------------------- Song Thumbnail -> Latest Release ----------------------------- */
+/* song thumbnail main body */
+.song-thumbnail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 48%;
+    position: relative;
+    margin-bottom: 0.6rem;
+}
+/* Song thumbnail image style */
+.song-thumbnail-img-container{
+    width: 30%;
+}
+.song-thumbnail-img{
+    width: 100%;
+}
+
+/* song thumbnail title and subtitle styling */
+.song-thumbnail-content{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0px;
+    padding: 0px;
+}
+/* song thumbnail title conten Style */
+.song-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 1.5rem;
+}
+/* Song thumbnail title */
+.song-title{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    color: var(--font-color-1);
+    margin: 0px;
+    padding: 0px;
+}
+/* Song thumbnail subtitle */
+.song-subtitle{
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-subtitle);
+    color: var(--font-color-2);
+    margin: 0px;
+    padding: 0px;
+}
+/* Song thumbnail other text */
+.song-other-title-small{
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-paragraph);
+    color: var(--font-color-2);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Song thumbnail menu button */
+.song-thumbnail-menu-button{
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+/* toggolog the menu dialog */
+#menu-checkbox-1:checked ~ .menu-dialogbox, 
+#menu-checkbox-2:checked ~ .menu-dialogbox, 
+#menu-checkbox-3:checked ~ .menu-dialogbox, 
+#menu-checkbox-4:checked ~ .menu-dialogbox{
+    height: auto;
+}
+
+
+/* ----------------------------- Popular Artist ----------------------------- */
+
+/* Artist profile container */
+.artist-profile-thumbnail{
+    width: 15%;
+    text-align: center;
+}
+/* artist profile-image styleing */
+.artist-profile-img{
+    width: 100%;
+    border-radius: 50%;
+}
+/* artist name styling */
+.artist-profile-name{
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-subtitle);
+    color: var(--font-color-1);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------- Song Gener ------------------------------- */
+
+#song-genre .collection-content{
+    border: 1px solid black;
+    align-items: center;
+    padding:0.8rem;
+    background-color: var(--font-color-7);
+}
+.station-img{
+    width: 15%;
+}
+
+.genre-list-box{
+    box-sizing:border-box;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.genre-thumbnail{
+    width: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.genre-name{
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-title);
+    color: var(--font-color-3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /*making center text center*/
+    box-sizing: border-box;
+}
+.genre-img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ---------------------------------- Mood ---------------------------------- */
+
+.mood-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mood-img-container {
+    width: 32%;
+    height: 9rem;
+    background-image: url(../Assest/Image/2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.mood-img-container > p{
+    color: var(--font-color-1);
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-subtitle);
+}
+
+/* ------------------------ Latest Song Engilsh/Hindi ----------------------- */
+.latest-img-thumbnail{
+    width: 100%;
+}
+.latest-container{
+    display: flex;
+    width: 15.5%;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items:space-around;
+    justify-content: space-between;
+}
+
+.latest-img-thumbnail{
+    width: 100%;
+}
+.latest-img{
+    width: 100%;
+}
+
+.latest-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0.5rem 0px;
+    height: 2rem;
+}
+
+.latest-title{
+    font-size: var(--font-size-smallest-paragraph);
+    font-weight: var(--font-weight-subtitle);
+    color: var(--font-color-1);
+    margin: 0px;
+    padding: 0px;
+}
+.latest-subtitle{
+    font-size:var(--font-size-smallest-paragraph);
+    font-weight: var(--font-weight-subtitle);
+    color: var(--font-color-2);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ---------------------------------- Queue --------------------------------- */
+.Queue{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: inherit;
+}
+.Queue-header-container{
+    width: 100%;
+    height: 4rem;
+}
+
+.queue-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Queue-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#queue-menu-checkbox:checked ~ .menu-dialogbox{
+    height: auto;
+  }
+
+ /* --------------------------- Playlist-item-class -------------------------- */
+
+/* Styles for the PlaylistItem container */
+.PlaylistItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for the content of the PlaylistItem */
+.playlist-item-content {
+    margin-left: 0.5rem;
+}
+
+/* Styles for the song thumbnail */
+.song-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Styles for the song number */
+.song-no {
+    margin-right: 0.6rem;
+}
+
+/* Styles for the song image container */
+.song-img-container {
+    margin-right: 0.8rem;
+}
+
+/* Styles for the song image */
+.song-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+/* Styles for the song detail container */
+.song-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.song-detail-container > span {
+    margin-bottom: 0.3rem;
+}
+
+/* Styles for the button container */
+.playlist-button-container {
+    display: flex;
+}
+
+/* Styles for all elements inside the button container */
+.playlist-button-container * {
+    margin: 0 0.4rem;
+}
+
+
+/* --------------------------- audio-player-Footer -------------------------- */
+.audio-player{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #646464; 
+}
+.audio-player-container{
+    margin: 0.6rem 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: inherit;
+    align-items: center;
+}
+
+/* Music information */
+.audio-information{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    width: 24%;
+}
+
+/* music controller */
+.music-player-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.music-controller-btns{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.duration-tracker{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+}
+
+.duration-tracker > span{
+    width: max-content;
+}
+
+.song-progress-slider{
+    width: 100%;
+    margin: 0 0.8rem;
+    box-sizing: border-box;
+}
+.song-progress-slider > input{
+    width: 100%;
+}
+
+/* Other controller */
+.other-controllers{
+    width: 24%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.volume-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.volume-slider > span{
+    margin-right: 0.8rem;
+}
+#volume-slider{
+    width: 6rem;
+}
+
+/* common class of footer */
+.audio-button{
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-button-size-noraml);
+    font-weight: var(--font-button-size-noraml);
+    color: var(--font-color-1);
+    cursor: pointer;
+}
+
+.circle-broder-button{
+    border: 2px solid var(--font-color-1);
+    border-radius: 50%;
+    padding: 0.5rem;   /* border will make distance from content */
+    display: flex;  
+    margin: auto;   /* helo a perfect circle */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Common Class                                */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------- Class for menu button dialog box -------------------- */
+
+.menu-button{
+    position: relative;
+}
+
+.menu-dialogbox{
+    position: absolute;
+    border-radius: 0.4rem;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    margin-top: 0.2rem;
+    height: 0px;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+  }
+  
+  /* Hide default checkbox */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style for custom checkbox */
+  .custom-checkbox-label {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .custom-checkbox-label > i {
+    margin-left: 0.5rem;
+  }
+
+  /* #custom-checkbox:checked ~ .menu-dialogbox{
+    height: auto;
+  } */
+  
+  .menu-dialogbox-container{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+  }
+  .menu-dialogbox-container > hr{
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: rgba(102, 102, 102, 0.76);
+  }
+  .menu-dialogbox-item{
+    cursor: pointer;
+
+  }
+
+
+/* ---------------------------------- test ---------------------------------- */
+/* -------------------------------- end test -------------------------------- */
+
+
+@media screen and (max-width: 768px) {
+
+    html,body{
+        font-size: 18px;
+    }
+
+    .main-body {
+        padding: 0 4%;
+        height: auto;
+    }
+
+    /* ------------------------------ Song Collection ------------------------------ */
+    #main-body-left{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ------------------------------- Song Queue ------------------------------- */
+    #main-body-right{
+        width: 100%;
+    }
+
+
+    /* ------------------------------ Footer music ------------------------------ */
+
+    .audio-player-container{
+        margin: 1rem 2%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 668px) {
+    .navBar-ul, .nav-notification{
+        display: none;
+    }
+}
