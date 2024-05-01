@@ -247,54 +247,123 @@ html, body{
 
 
 /* ------------------------------ Poster image ------------------------------ */
-.poster-content{
+.poster{
+    margin: 3rem 0rem 3rem 0rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 2vh 0px;
+    justify-content: center;
     align-items: center;
-    height: fit-content;
-    box-sizing: border-box;
-    border: 1px solid black;
-    height: 200px;
 }
 
-.poster-img {
-    width: 30%; /* Set your initial image width */
-    transition: all 0.3s ease;
-    border: 1px solid rgb(202, 19, 162);
-}
+/* --------------------------- poster type-1 popup -------------------------- */
+    .poster-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        box-sizing: border-box;
+        height: 200px;
+    }
 
-.poster-img:hover {
-    width: 35%;
-}
-.poster-content:hover .poster-img:not(:hover) {
-    width: 27%;
-    border: 2px solid #dfdb16;
-}
+    .poster-img {
+        width: 25%;
+        transition: all 0.3s ease;
+    }
 
-/* #img1:hover {
-    transform: scale(1.2) translate(10%);
-}
+    .poster-img:hover {
+        width: 28%;
+    }
 
-#img2:hover {
-    transform: scale(1.2);
-}
-
-#img3:hover {
-    transform: scale(1.2) translate(-10%);
-} */
+    .poster-content:hover .poster-img:not(:hover) {
+        width: 23%;
+    }
+/* --------------------------- END OF poster type-1 popup -------------------------- */
 
 
-/* .poster-content:hover :nth-child(2n){
-    transform: scale(0.8) translateX(20%);
-    box-sizing: border-box;
-    border: 3px solid green;
+/* -------------------------- poster type-2 Sldier -------------------------- */
+
+/* Making 3D space for the poster */
+.poster .slider-container{
+    height: 30vh;
+    max-height: min-content;
+    /* min-height: max-content; */
+    position: relative;
+    perspective: 9000px;
+    transform-style:preserve-3d;
+    width: 97%;
+
 }
-.poster-content:hover :nth-child(2n+1) {
-    transform: scale(0.8);
-    box-sizing: border-box;
-    border: 3px solid red;
-} */
+
+/* Hiding the radio button */
+.slider-container input{
+    display: none;
+}
+
+/* Set up the poster main container */
+.slider-container label{
+    margin: auto;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Poster images height and width. Image ratio will adjust accordingly */
+.slider-image{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: 15px 0px 10px -6px rgba(0, 0, 0, 0.7),      /* Image Right side shadow*/
+                -15px 0px 10px -6px rgba(0, 0, 0, 0.7)     /* Image Left side shadow*/
+}
+
+/* Setting position for left last poster image */
+#sImg1:checked ~ #slider4, #sImg2:checked ~ #slider5,
+#sImg3:checked ~ #slider1, #sImg4:checked ~ #slider2,
+#sImg5:checked ~ #slider3{
+    transform: translate3d(-50%,0,-200px);
+}
+
+/* Setting position for left next poster image */
+#sImg1:checked ~ #slider5, #sImg2:checked ~ #slider1,
+#sImg3:checked ~ #slider2, #sImg4:checked ~ #slider3,
+#sImg5:checked ~ #slider4{
+    transform: translate3d(-30%,0,-100px);
+
+}
+
+/* Setting position for center or selected poster image */
+#sImg1:checked ~ #slider1, #sImg2:checked ~ #slider2,
+#sImg3:checked ~ #slider3, #sImg4:checked ~ #slider4,
+#sImg5:checked ~ #slider5{
+    transform: translate3d(0,0,0) scale(1.1);
+
+}
+
+/* Setting position for right next poster image */
+#sImg1:checked ~ #slider2, #sImg2:checked ~ #slider3,
+#sImg3:checked ~ #slider4, #sImg4:checked ~ #slider5,
+#sImg5:checked ~ #slider1{
+    transform: translate3d(30%,0,-100px);
+}
+
+/* Setting position for right last poster image */
+#sImg1:checked ~ #slider3, #sImg2:checked ~ #slider4,
+#sImg3:checked ~ #slider5, #sImg4:checked ~ #slider1,
+#sImg5:checked ~ #slider2{
+    transform: translate3d(50%,0,-200px);
+}
+
+/* ----------------------- END OF poster type-2 Slider ---------------------- */
+
+
 
 /* ------------------------------- collection ------------------------------- */
 .collection{
@@ -423,7 +492,7 @@ html, body{
     right: 0px;
 }
 
-/* toggolog the menu dialog */
+/* toggolog the menu dialog for latest release song*/
 #menu-checkbox-1:checked ~ .menu-dialogbox, 
 #menu-checkbox-2:checked ~ .menu-dialogbox, 
 #menu-checkbox-3:checked ~ .menu-dialogbox, 
@@ -850,6 +919,64 @@ html, body{
     .audio-player-container{
         margin: 1rem 2%;
     }
+
+
+ /* -------------------------- poster type-2 Sldier -------------------------- */
+
+    /* Making 3D space for the poster */
+    .poster .slider-container{
+        height: 30vh;
+    }
+
+    /* Hiding the radio button */
+    .slider-container input{
+        display: none;
+    }
+
+    /* Set up the poster main container */
+    .slider-container label{
+        width:80%;
+    }
+
+    /* Setting position for left last poster image */
+    #sImg1:checked ~ #slider4, #sImg2:checked ~ #slider5,
+    #sImg3:checked ~ #slider1, #sImg4:checked ~ #slider2,
+    #sImg5:checked ~ #slider3{
+        transform: translate3d(-15%,0,-200px);
+    }
+
+    /* Setting position for left next poster image */
+    #sImg1:checked ~ #slider5, #sImg2:checked ~ #slider1,
+    #sImg3:checked ~ #slider2, #sImg4:checked ~ #slider3,
+    #sImg5:checked ~ #slider4{
+        transform: translate3d(-7%,0,-100px);
+
+    }
+
+    /* Setting position for center or selected poster image */
+    #sImg1:checked ~ #slider1, #sImg2:checked ~ #slider2,
+    #sImg3:checked ~ #slider3, #sImg4:checked ~ #slider4,
+    #sImg5:checked ~ #slider5{
+        transform: translate3d(0,0,0);
+
+    }
+
+    /* Setting position for right next poster image */
+    #sImg1:checked ~ #slider2, #sImg2:checked ~ #slider3,
+    #sImg3:checked ~ #slider4, #sImg4:checked ~ #slider5,
+    #sImg5:checked ~ #slider1{
+        transform: translate3d(7%,0,-100px);
+    }
+
+    /* Setting position for right last poster image */
+    #sImg1:checked ~ #slider3, #sImg2:checked ~ #slider4,
+    #sImg3:checked ~ #slider5, #sImg4:checked ~ #slider1,
+    #sImg5:checked ~ #slider2{
+        transform: translate3d(15%,0,-200px);
+    }
+
+/* ----------------------- END OF poster type-2 Slider ---------------------- */
+
 }
 
 
