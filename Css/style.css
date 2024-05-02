@@ -13,8 +13,8 @@
     --eighth-color: #000000;
 
     --primary-font-color:rgb(236, 236, 236);
-    --secondary-font-color:rgb(197, 197, 197);
-    --third-font-color:rgb(182, 182, 182);
+    --secondary-font-color:rgba(255, 255, 255, 0.733);
+    --third-font-color:rgb(167, 167, 167);
 
     /* font color */
     --font-color-1: #080808;
@@ -181,7 +181,7 @@ html, body{
     border: none;
     background-color: transparent;
     font-size: 1rem;
-    color: var(--secondary-font-color);
+    color: var(--third-font-color);
 }
 
 .nav-notification {
@@ -467,17 +467,17 @@ html, body{
 }
 /* Song thumbnail title */
 .song-title{
-    font-size: var(--font-size-title);
-    font-weight: var(--font-weight-smaller-paragraph);
+    font-size: var(--font-size-smaller-paragraph);
+    font-weight: var(--font-weight-smallest-paragraph);
     color: var(--primary-font-color);
     margin: 0px;
     padding: 0px;
 }
 /* Song thumbnail subtitle */
 .song-subtitle{
-    font-size: var(--font-size-subtitle);
-    font-weight: var(--font-weight-subtitle);
-    color: var(--font-color-2);
+    font-size: var(--font-size-smaller-paragraph);
+    font-weight: var(--font-weight-smallest-paragraph);
+    color: var(--third-font-color);
     margin: 0px;
     padding: 0px;
 }
@@ -650,18 +650,30 @@ html, body{
     flex-direction: column;
     overflow: hidden;
     height: inherit;
+    background-color: var(--primary-color);
 }
 .Queue-header-container{
     width: 100%;
     height: 4rem;
+    margin-top: 1rem;
+    color: var(--primary-font-color);
 }
+
+/* .Queue-header-container::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: 10px;
+    background-color: transparent;
+} */
 
 .queue-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.Queue-content{
+
+.queue-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -686,11 +698,35 @@ html, body{
     width: 100%;
     height: 4rem;
     margin-bottom: 0.5rem;
+    padding: 5px;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.PlaylistItem:hover{
+    background-color: var(--third-color);
+}
+
+.PlaylistItem:hover > .playlist-item-content > .song-thumb > .song-img-container::after{
+    width: 100%;
+    z-index: inherit;
+}
+.queue-container .PlaylistItem:hover > .playlist-item-content > .song-thumb > .song-img-container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.37);
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.445);
+
 }
 
 /* Styles for the content of the PlaylistItem */
 .playlist-item-content {
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
 }
 
 /* Styles for the song thumbnail */
@@ -703,22 +739,39 @@ html, body{
 /* Styles for the song number */
 .song-no {
     margin-right: 0.6rem;
-    font-size: var(--font-button-size-noraml);
-    font-weight: var(--font-button-size-noraml);
-    color: var(--primary-font-color);
+    font-size: var(--font-button-size-small);
+    font-weight: var(--font-weight-small-paragraph);
+    color: var(--third-font-color);
 }
 
 /* Styles for the song image container */
 .song-img-container {
     margin-right: 0.8rem;
+    position: relative;
 }
 
 /* Styles for the song image */
 .song-img {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 0.5rem;
 }
+.song-img-container::after{
+    /* width: 100%; */
+    text-rendering: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font: var(--fa-font-solid);
+    content: '\f04b';
+    color: white;
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
 
 /* Styles for the song detail container */
 .song-detail-container {
@@ -740,6 +793,10 @@ html, body{
 /* Styles for all elements inside the button container */
 .playlist-button-container * {
     margin: 0 0.4rem;
+}
+
+.song-like-button{
+    color: var(--third-font-color);
 }
 
 
