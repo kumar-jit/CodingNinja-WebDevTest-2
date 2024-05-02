@@ -80,6 +80,10 @@
     --navbar-bt-up-pad: 1.2rem;
 
 
+    /* queuelist height on mobile device */
+    --queue-list-height-mobile:50vh;
+
+
     /* bottom fade effect height */
     --bottom-fade-effect-height: 2rem;
 }
@@ -92,6 +96,7 @@ html, body{
     font-family: 'Poppins', sans-serif;
     /* background-color: var(--primary-color); */
     font-size: 15px;
+    overflow: hidden;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -463,8 +468,8 @@ html, body{
 /* Song thumbnail title */
 .song-title{
     font-size: var(--font-size-title);
-    font-weight: var(--font-weight-title);
-    color: var(--font-color-1);
+    font-weight: var(--font-weight-smaller-paragraph);
+    color: var(--primary-font-color);
     margin: 0px;
     padding: 0px;
 }
@@ -664,7 +669,11 @@ html, body{
 
 #queue-menu-checkbox:checked ~ .menu-dialogbox{
     height: auto;
-  }
+}
+
+#queue-menu-checkbox-mobile:checked ~ .menu-dialogbox{
+    height: auto;
+}
 
  /* --------------------------- Playlist-item-class -------------------------- */
 
@@ -694,6 +703,9 @@ html, body{
 /* Styles for the song number */
 .song-no {
     margin-right: 0.6rem;
+    font-size: var(--font-button-size-noraml);
+    font-weight: var(--font-button-size-noraml);
+    color: var(--primary-font-color);
 }
 
 /* Styles for the song image container */
@@ -858,6 +870,9 @@ html, body{
   .custom-checkbox-label {
     display: inline-block;
     cursor: pointer;
+    font-size: var(--font-button-size-noraml);
+    font-weight: var(--font-button-size-noraml);
+    color: var(--primary-font-color);
   }
 
   .custom-checkbox-label > i {
@@ -894,7 +909,7 @@ html, body{
 @media screen and (max-width: 768px) {
 
     html,body{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .main-body {
@@ -908,11 +923,116 @@ html, body{
         box-sizing: border-box;
     }
 
-    /* ------------------------------- Song Queue ------------------------------- */
+    /* ------------------------------- Song Queue Mobile ------------------------------- */
+    /* Hide the main body right section */
     #main-body-right{
-        width: 100%;
+        display: none;
     }
 
+    #queue-for-mobile label i {
+        color: var(--primary-font-color);
+    }
+
+    /* Queue for mobile */
+    #queue-for-mobile{
+        position: fixed;
+        top: calc(var(--nav-height-rem) + 50px);
+        right: 0px;
+        z-index: 2;
+        display: flex;
+        justify-content: end;
+        height: auto;
+        max-height: 100%;
+        max-width: 80%;
+        box-sizing: border-box;
+    }
+
+    /* Queue mobile sidebar container */
+    #queue-for-mobile .queue-mobile-sidebar-container{
+        width: 300px;
+        background-color: var(--fourth-color);
+        max-width: 80%;
+        padding: 0px 1rem;
+        padding-bottom: 2rem;
+        transition: all 0.4s ease-in-out;
+        height: auto;
+        max-height: calc(100vh - var(--queue-list-height-mobile));
+    }
+
+    /* Queue mobile open button */
+    .queue-mobile-open-btn{
+        background-color: var(--fourth-color);
+        height: max-content;
+        width: max-content;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Queue mobile sidebar container when mobile button is checked */
+    /* hiding the queue body */
+    #queue-mobile-btn:checked ~ .queue-mobile-sidebar-container{
+        width: 0px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Queue mobile queue sidebar content hide when mobile button is checked */
+    #queue-mobile-btn:checked ~ .queue-mobile-sidebar-container > .Queue-mbs > .queue-mbs-container{
+        height: 0px;
+    }
+
+    /* Queue mobile button open when mobile button is checked */
+    /* inittial case open button disply */
+    #queue-mobile-btn:checked ~ #queue-mobile-btn-open{
+        display: flex;
+    }
+
+    /* Queue mobile button close when mobile button is checked */
+    /* inittial case hiding close button */
+    #queue-mobile-btn:checked ~ #queue-mobile-btn-close{
+        display: none;
+    }
+
+    /* when queue is opend then hiding the open button */
+    #queue-mobile-btn:not(:checked) ~ #queue-mobile-btn-open{
+        display: none;
+    }
+
+    /* Queue mobile sidebar height set */
+    .Queue-mbs{
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Queue mobile sidebar h1 adjustment */
+    .Queue-mbs h1{
+        padding: 0px;
+        margin: 0px;
+        color: var(--primary-font-color);
+    }
+
+    /* Queue mobile sidebar header style */
+    .queue-mbs-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px;
+        box-sizing: border-box;
+        border-bottom:1px solid white;
+    }
+
+    /* Queue mobile sidebar main content style */
+    .queue-mbs-container{
+        height: inherit;
+        box-sizing: border-box;
+        height: calc(calc(100vh - var(--queue-list-height-mobile)) - 2rem);
+        transition: all  0.4s ease-in-out;
+    }
 
     /* ------------------------------ Footer music ------------------------------ */
 
@@ -978,9 +1098,6 @@ html, body{
 /* ----------------------- END OF poster type-2 Slider ---------------------- */
 
 }
-
-
-
 
 @media screen and (max-width: 668px) {
     .navBar-ul, .nav-search-box,  .nav-notification{
