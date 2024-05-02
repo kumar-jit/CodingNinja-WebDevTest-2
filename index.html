@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Music App</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="./Css/style.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Css/style.css" type="text/css" />
+  </head>
 
-</head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Nav Section                               -->
+    <!-- ----------------------------------------------------------------------- -->
 
-<body>
-    <!-- ----------------------------- Nav Section ----------------------------- -->
-    
     <nav class="nav-bar fade-effect-botoom">
-        <!-- nav left-Side -->
-        <div class="nav-bar-inner-container nav-bar-left-container">
+      <!-- ---------------------------- nav left-Side ---------------------------- -->
+      <div class="nav-bar-inner-container nav-bar-left-container">
+        <!-- Nav Logo -->
+        <div class="nav-logo">
+          <img src="Assest/Image/Ninja Logo/logo.png" id="logo" />
+        </div>
+        <!-- Other List  like Favourites-->
+        <ul class="navBar-ul">
+          <li>
+            <a href="#" class="">Favorite</a>
+          </li>
+        </ul>
+      </div>
 
-            <!-- Nav Logo -->
-            <div class="nav-logo">
-                <img src="Assest/Image/Ninja Logo/logo.png" id="logo">
-            </div>
-            <!-- Other List  like Favourites-->
-            <ul class="navBar-ul">
-                <li>
-                    <a href="#" class="">Favorite</a>
-                </li>
-            </ul>
-
+      <!-- --------------------------- nav Right-Side ---------------------------- -->
+      <div class="nav-bar-inner-container nav-bar-right-container">
+        <!-- Search Box -->
+        <div class="nav-search-box">
+          <button><i class="fas fa-search"></i></button>
+          <input type="text" placeholder="Search" id="song-search" />
+          <button><i class="fas fa-microphone"></i></button>
         </div>
 
-        <!-- nav Right-Side -->
-        <div class="nav-bar-inner-container nav-bar-right-container">
+        <!-- Notification -->
+        <button class="nav-notification"><i class="fas fa-bell"></i></button>
 
-            <!-- Search Box -->
-            <div class="nav-search-box">
-                <button><i class="fas fa-search"></i></button>
-                <input type="text" placeholder="Search" id="song-search">
-                <button><i class="fas fa-microphone"></i></button>
-            </div>
-
-            <!-- Notification -->
-            <button class="nav-notification"><i class="fas fa-bell"></i></button>
-
-            <!-- User Profile -->
-            <div class="nav-user-profile ">
-                <img src="./Assest/Image/1.jpeg" class="user-profile-img" id="user-profile-img">
-            </div>
+        <!-- User Profile -->
+        <div class="nav-user-profile">
+          <img
+            src="./Assest/Image/1.jpeg"
+            class="user-profile-img"
+            id="user-profile-img"
+          />
         </div>
+      </div>
     </nav>
 
-    <div class="main-body" >        
-        <!-- ----------------------------- Song Collection ----------------------------- -->
-        <div id="main-body-left" class="body-content-height scroll-content" >
-
-            <!-- poster type-1 -->
-            <!-- <section class="poster">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Main body                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="main-body">
+      <!-- ----------------------------- Song Collection ----------------------------- -->
+      <div id="main-body-left" class="body-content-height scroll-content">
+        <!-- poster type-1 -->
+        <!-- <section class="poster">
                 <div class="poster-content">
                         <img src="./Assest/Image/1.jpeg" class="poster-img" id="img1">
                         <img src="./Assest/Image/1.jpeg" class="poster-img" id="img2">
@@ -65,806 +75,2317 @@
                 </div>
             </section> -->
 
-            <!-- poster type-2 3d Slider -->
-            <section class="poster">
-                <div class="slider-container">
-                    <input type="radio" name="posterSlider" id="sImg1" checked>
-                    <input type="radio" name="posterSlider" id="sImg2">
-                    <input type="radio" name="posterSlider" id="sImg3">
-                    <input type="radio" name="posterSlider" id="sImg4">
-                    <input type="radio" name="posterSlider" id="sImg5">
+        <!-- poster type-2 3d Slider -->
+        <section class="poster">
+          <div class="slider-container">
+            <input type="radio" name="posterSlider" id="sImg1" checked />
+            <input type="radio" name="posterSlider" id="sImg2" />
+            <input type="radio" name="posterSlider" id="sImg3" />
+            <input type="radio" name="posterSlider" id="sImg4" />
+            <input type="radio" name="posterSlider" id="sImg5" />
 
-                    <label class="slider-poster-container" for="sImg1" id="slider1">
-                        <img src="Assest/Image/Posters/poster (1).jpg" class="slider-image">
-                    </label>
-                    <label class="slider-poster-container" for="sImg2" id="slider2">
-                        <img src="Assest/Image/Posters/poster (2).jpg" class="slider-image">
-                    </label>
-                    <label class="slider-poster-container" for="sImg3" id="slider3">
-                        <img src="Assest/Image/Posters/poster (3).jpg" class="slider-image">
-                    </label>
-                    <label class="slider-poster-container" for="sImg4" id="slider4">
-                        <img src="Assest/Image/Posters/poster (4).jpg" class="slider-image">
-                    </label>
-                    <label class="slider-poster-container" for="sImg5" id="slider5">
-                        <img src="Assest/Image/Posters/poster (5).jpg" class="slider-image">
-                    </label>
+            <label class="slider-poster-container" for="sImg1" id="slider1">
+              <img
+                src="Assest/Image/Posters/poster (1).jpg"
+                class="slider-image"
+              />
+            </label>
+            <label class="slider-poster-container" for="sImg2" id="slider2">
+              <img
+                src="Assest/Image/Posters/poster (2).jpg"
+                class="slider-image"
+              />
+            </label>
+            <label class="slider-poster-container" for="sImg3" id="slider3">
+              <img
+                src="Assest/Image/Posters/poster (3).jpg"
+                class="slider-image"
+              />
+            </label>
+            <label class="slider-poster-container" for="sImg4" id="slider4">
+              <img
+                src="Assest/Image/Posters/poster (4).jpg"
+                class="slider-image"
+              />
+            </label>
+            <label class="slider-poster-container" for="sImg5" id="slider5">
+              <img
+                src="Assest/Image/Posters/poster (5).jpg"
+                class="slider-image"
+              />
+            </label>
+          </div>
+        </section>
+
+        <!-- Latest Release -->
+        <section id="latest-release" class="collection">
+          <div class="collection-heading">
+            <h3>Latest Release</h3>
+          </div>
+          <div
+            class="collection-content collection-content-justfy-Space-Between"
+          >
+            <div class="song-thumbnail">
+              <!-- Main song thumbnail container -->
+              <div class="song-thumbnail-img-container">
+                <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img" />
+              </div>
+
+              <!-- Container for song details -->
+              <div class="song-thumbnail-content">
+                <div class="song-title-container">
+                  <p class="song-title">Song Title</p>
+                  <p class="song-other-title-small">4:44</p>
                 </div>
-            </section>
+                <span class="song-subtitle">AUG 11, 2017</span>
+              </div>
 
-            <!-- Latest Release -->
-            <section id="latest-release" class="collection">
-                <div class="collection-heading">
-                    <h3>Latest Release</h3>
+              <!-- Container for menu button -->
+              <div class="song-thumbnail-menu-button">
+                <div class="menu-button">
+                  <!-- Checkbox for menu toggle -->
+                  <input type="checkbox" id="menu-checkbox-1" />
+                  <label for="menu-checkbox-1" class="custom-checkbox-label"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+
+                  <!-- Menu dialog box -->
+                  <div class="menu-dialogbox">
+                    <div class="menu-dialogbox-container">
+                      <!-- Menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Playlist</span>
+                      </div>
+                      <hr />
+                      <!-- Horizontal line separating menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Add to Favorite</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="collection-content collection-content-justfy-Space-Between">
-                    <div class="song-thumbnail">
-                        <!-- Main song thumbnail container -->
-                        <div class="song-thumbnail-img-container">
-                            <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img">
-                        </div>
-                        
-                        <!-- Container for song details -->
-                        <div class="song-thumbnail-content">
-                            <div class="song-title-container">
-                                <p class="song-title">Song Title</p>
-                                <p class="song-other-title-small">4:44</p>
-                            </div>
-                            <span class="song-subtitle">AUG 11, 2017</span>
-                        </div>
-                        
-                        <!-- Container for menu button -->
-                        <div class="song-thumbnail-menu-button">
-                            <div class="menu-button">
-                                <!-- Checkbox for menu toggle -->
-                                <input type="checkbox" id="menu-checkbox-1">
-                                <label for="menu-checkbox-1" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-                                
-                                <!-- Menu dialog box -->
-                                <div class="menu-dialogbox">
-                                    <div class="menu-dialogbox-container">
-                                        <!-- Menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Playlist</span>
-                                        </div>
-                                        <hr> <!-- Horizontal line separating menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Add to Favorite</span>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+              </div>
+            </div>
 
-                    <div class="song-thumbnail">
-                        <!-- Main song thumbnail container -->
-                        <div class="song-thumbnail-img-container">
-                            <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img">
-                        </div>
-                        
-                        <!-- Container for song details -->
-                        <div class="song-thumbnail-content">
-                            <div class="song-title-container">
-                                <p class="song-title">Song Title</p>
-                                <p class="song-other-title-small">4:44</p>
-                            </div>
-                            <span class="song-subtitle">AUG 11, 2017</span>
-                        </div>
-                        
-                        <!-- Container for menu button -->
-                        <div class="song-thumbnail-menu-button">
-                            <div class="menu-button">
-                                <!-- Checkbox for menu toggle -->
-                                <input type="checkbox" id="menu-checkbox-2">
-                                <label for="menu-checkbox-2" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-                                
-                                <!-- Menu dialog box -->
-                                <div class="menu-dialogbox">
-                                    <div class="menu-dialogbox-container">
-                                        <!-- Menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Playlist</span>
-                                        </div>
-                                        <hr> <!-- Horizontal line separating menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Add to Favorite</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="song-thumbnail">
+              <!-- Main song thumbnail container -->
+              <div class="song-thumbnail-img-container">
+                <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img" />
+              </div>
 
-                    
-                    <div class="song-thumbnail">
-                        <!-- Main song thumbnail container -->
-                        <div class="song-thumbnail-img-container">
-                            <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img">
-                        </div>
-                        
-                        <!-- Container for song details -->
-                        <div class="song-thumbnail-content">
-                            <div class="song-title-container">
-                                <p class="song-title">Song Title</p>
-                                <p class="song-other-title-small">4:44</p>
-                            </div>
-                            <span class="song-subtitle">AUG 11, 2017</span>
-                        </div>
-                        
-                        <!-- Container for menu button -->
-                        <div class="song-thumbnail-menu-button">
-                            <div class="menu-button">
-                                <!-- Checkbox for menu toggle -->
-                                <input type="checkbox" id="menu-checkbox-3">
-                                <label for="menu-checkbox-3" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-                                
-                                <!-- Menu dialog box -->
-                                <div class="menu-dialogbox">
-                                    <div class="menu-dialogbox-container">
-                                        <!-- Menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Playlist</span>
-                                        </div>
-                                        <hr> <!-- Horizontal line separating menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Add to Favorite</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="song-thumbnail">
-                        <!-- Main song thumbnail container -->
-                        <div class="song-thumbnail-img-container">
-                            <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img">
-                        </div>
-                        
-                        <!-- Container for song details -->
-                        <div class="song-thumbnail-content">
-                            <div class="song-title-container">
-                                <p class="song-title">Song Title</p>
-                                <p class="song-other-title-small">4:44</p>
-                            </div>
-                            <span class="song-subtitle">AUG 11, 2017</span>
-                        </div>
-                        
-                        <!-- Container for menu button -->
-                        <div class="song-thumbnail-menu-button">
-                            <div class="menu-button">
-                                <!-- Checkbox for menu toggle -->
-                                <input type="checkbox" id="menu-checkbox-4">
-                                <label for="menu-checkbox-4" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-                                
-                                <!-- Menu dialog box -->
-                                <div class="menu-dialogbox">
-                                    <div class="menu-dialogbox-container">
-                                        <!-- Menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Playlist</span>
-                                        </div>
-                                        <hr> <!-- Horizontal line separating menu items -->
-                                        <div class="menu-dialogbox-item">
-                                            <span>Add to Favorite</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
+              <!-- Container for song details -->
+              <div class="song-thumbnail-content">
+                <div class="song-title-container">
+                  <p class="song-title">Song Title</p>
+                  <p class="song-other-title-small">4:44</p>
                 </div>
-            </section>
+                <span class="song-subtitle">AUG 11, 2017</span>
+              </div>
 
-            <!-- Popular Artist -->
-            <section id="popular-artist" class="collection">
-                <div class="collection-heading">
-                    <h3>Popular Artists</h3>
+              <!-- Container for menu button -->
+              <div class="song-thumbnail-menu-button">
+                <div class="menu-button">
+                  <!-- Checkbox for menu toggle -->
+                  <input type="checkbox" id="menu-checkbox-2" />
+                  <label for="menu-checkbox-2" class="custom-checkbox-label"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+
+                  <!-- Menu dialog box -->
+                  <div class="menu-dialogbox">
+                    <div class="menu-dialogbox-container">
+                      <!-- Menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Playlist</span>
+                      </div>
+                      <hr />
+                      <!-- Horizontal line separating menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Add to Favorite</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="collection-content collection-content-justfy-Space-Between">
-                    <div class="artist-profile-thumbnail">
-                        <div class="artist-profile">
-                            <img src="./Assest/Image/1.jpeg" class="artist-profile-img">
-                        </div>
-                        <span class="artist-profile-name">Ed Sheerean</span>
-                    </div>
+              </div>
+            </div>
 
-                    <div class="artist-profile-thumbnail">
-                        <div class="artist-profile">
-                            <img src="./Assest/Image/1.jpeg" class="artist-profile-img">
-                        </div>
-                        <span class="artist-profile-name">Ed Sheerean</span>
-                    </div>
+            <div class="song-thumbnail">
+              <!-- Main song thumbnail container -->
+              <div class="song-thumbnail-img-container">
+                <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img" />
+              </div>
 
-                    <div class="artist-profile-thumbnail">
-                        <div class="artist-profile">
-                            <img src="./Assest/Image/1.jpeg" class="artist-profile-img">
-                        </div>
-                        <span class="artist-profile-name">Ed Sheerean</span>
-                    </div>
-
-                    <div class="artist-profile-thumbnail">
-                        <div class="artist-profile">
-                            <img src="./Assest/Image/1.jpeg" class="artist-profile-img">
-                        </div>
-                        <span class="artist-profile-name">Imagin Dragon</span>
-                    </div>
-
-                    <div class="artist-profile-thumbnail">
-                        <div class="artist-profile">
-                            <img src="./Assest/Image/1.jpeg" class="artist-profile-img">
-                        </div>
-                        <span class="artist-profile-name">Imagin Dragon</span>
-                    </div>
-
-                    <div class="artist-profile-thumbnail">
-                        <div class="artist-profile">
-                            <img src="./Assest/Image/1.jpeg" class="artist-profile-img">
-                        </div>
-                        <span class="artist-profile-name">Imagin Dragon</span>
-                    </div>
+              <!-- Container for song details -->
+              <div class="song-thumbnail-content">
+                <div class="song-title-container">
+                  <p class="song-title">Song Title</p>
+                  <p class="song-other-title-small">4:44</p>
                 </div>
-            </section>
+                <span class="song-subtitle">AUG 11, 2017</span>
+              </div>
 
-            <!-- song genre -->
-            <section id="song-genre" class="collection">
-                <div class="collection-content collection-content-justfy-Space-Between">
-                    <img src="./Assest/Image/1.jpeg" class="station-img">
-                    <div class="genre-list-box">
-                        <div class="genre-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="genre-img">
-                            <span class="genre-name">Love</span>
-                        </div>
-                        <div class="genre-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="genre-img">
-                            <span class="genre-name">Retoro</span>
-                        </div>
-                        <div class="genre-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="genre-img">
-                            <span class="genre-name">Chill</span>
-                        </div>
-                        <div class="genre-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="genre-img">
-                            <span class="genre-name">Workout</span>
-                        </div>
-                        <div class="genre-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="genre-img">
-                            <span class="genre-name">Rock</span>
-                        </div>
-                        <div class="genre-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="genre-img">
-                            <span class="genre-name">Pop</span>
-                        </div>
+              <!-- Container for menu button -->
+              <div class="song-thumbnail-menu-button">
+                <div class="menu-button">
+                  <!-- Checkbox for menu toggle -->
+                  <input type="checkbox" id="menu-checkbox-3" />
+                  <label for="menu-checkbox-3" class="custom-checkbox-label"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+
+                  <!-- Menu dialog box -->
+                  <div class="menu-dialogbox">
+                    <div class="menu-dialogbox-container">
+                      <!-- Menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Playlist</span>
+                      </div>
+                      <hr />
+                      <!-- Horizontal line separating menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Add to Favorite</span>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>
 
-            <!-- Mood -->
-            <section id="mood" class="collection">
-                <div class="collection-content">
-                    <div class="mood-container">
-                        <div class="mood-img-container">
-                            <p>Party</p>
-                        </div>
-                        <div class="mood-img-container">
-                            <p>Party</p>
-                        </div>
-                        <div class="mood-img-container">
-                            <p>Party</p>
-                        </div>
-                    </div>
+            <div class="song-thumbnail">
+              <!-- Main song thumbnail container -->
+              <div class="song-thumbnail-img-container">
+                <img src="./Assest/Image/1.jpeg" class="song-thumbnail-img" />
+              </div>
+
+              <!-- Container for song details -->
+              <div class="song-thumbnail-content">
+                <div class="song-title-container">
+                  <p class="song-title">Song Title</p>
+                  <p class="song-other-title-small">4:44</p>
                 </div>
-            </section>
+                <span class="song-subtitle">AUG 11, 2017</span>
+              </div>
 
-            <!-- Latest English -->
-            <section id="latest-english" class="collection">
-                <div class="collection-heading">
-                    <h2>Latest English</h2>
+              <!-- Container for menu button -->
+              <div class="song-thumbnail-menu-button">
+                <div class="menu-button">
+                  <!-- Checkbox for menu toggle -->
+                  <input type="checkbox" id="menu-checkbox-4" />
+                  <label for="menu-checkbox-4" class="custom-checkbox-label"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+
+                  <!-- Menu dialog box -->
+                  <div class="menu-dialogbox">
+                    <div class="menu-dialogbox-container">
+                      <!-- Menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Playlist</span>
+                      </div>
+                      <hr />
+                      <!-- Horizontal line separating menu items -->
+                      <div class="menu-dialogbox-item">
+                        <span>Add to Favorite</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="collection-content collection-content-justfy-Space-Between">
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+        <!-- Popular Artist -->
+        <section id="popular-artist" class="collection">
+          <div class="collection-heading">
+            <h3>Popular Artists</h3>
+          </div>
+          <div
+            class="collection-content collection-content-justfy-Space-Between"
+          >
+            <div class="artist-profile-thumbnail">
+              <div class="artist-profile">
+                <img src="./Assest/Image/1.jpeg" class="artist-profile-img" />
+              </div>
+              <span class="artist-profile-name">Ed Sheerean</span>
+            </div>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+            <div class="artist-profile-thumbnail">
+              <div class="artist-profile">
+                <img src="./Assest/Image/1.jpeg" class="artist-profile-img" />
+              </div>
+              <span class="artist-profile-name">Ed Sheerean</span>
+            </div>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+            <div class="artist-profile-thumbnail">
+              <div class="artist-profile">
+                <img src="./Assest/Image/1.jpeg" class="artist-profile-img" />
+              </div>
+              <span class="artist-profile-name">Ed Sheerean</span>
+            </div>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+            <div class="artist-profile-thumbnail">
+              <div class="artist-profile">
+                <img src="./Assest/Image/1.jpeg" class="artist-profile-img" />
+              </div>
+              <span class="artist-profile-name">Imagin Dragon</span>
+            </div>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+            <div class="artist-profile-thumbnail">
+              <div class="artist-profile">
+                <img src="./Assest/Image/1.jpeg" class="artist-profile-img" />
+              </div>
+              <span class="artist-profile-name">Imagin Dragon</span>
+            </div>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
+            <div class="artist-profile-thumbnail">
+              <div class="artist-profile">
+                <img src="./Assest/Image/1.jpeg" class="artist-profile-img" />
+              </div>
+              <span class="artist-profile-name">Imagin Dragon</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- song genre -->
+        <section id="song-genre" class="collection">
+          <div
+            class="collection-content collection-content-justfy-Space-Between"
+          >
+            <img src="./Assest/Image/1.jpeg" class="station-img" />
+            <div class="genre-list-box">
+              <div class="genre-thumbnail">
+                <img src="./Assest/Image/1.jpeg" class="genre-img" />
+                <span class="genre-name">Love</span>
+              </div>
+              <div class="genre-thumbnail">
+                <img src="./Assest/Image/1.jpeg" class="genre-img" />
+                <span class="genre-name">Retoro</span>
+              </div>
+              <div class="genre-thumbnail">
+                <img src="./Assest/Image/1.jpeg" class="genre-img" />
+                <span class="genre-name">Chill</span>
+              </div>
+              <div class="genre-thumbnail">
+                <img src="./Assest/Image/1.jpeg" class="genre-img" />
+                <span class="genre-name">Workout</span>
+              </div>
+              <div class="genre-thumbnail">
+                <img src="./Assest/Image/1.jpeg" class="genre-img" />
+                <span class="genre-name">Rock</span>
+              </div>
+              <div class="genre-thumbnail">
+                <img src="./Assest/Image/1.jpeg" class="genre-img" />
+                <span class="genre-name">Pop</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mood -->
+        <section id="mood" class="collection">
+          <div class="collection-content">
+            <div class="mood-container">
+              <div class="mood-img-container">
+                <p>Party</p>
+              </div>
+              <div class="mood-img-container">
+                <p>Party</p>
+              </div>
+              <div class="mood-img-container">
+                <p>Party</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest English -->
+        <section id="latest-english" class="collection">
+          <div class="collection-heading">
+            <h2>Latest English</h2>
+          </div>
+          <div
+            class="collection-content collection-content-justfy-Space-Between"
+          >
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Latest Hindi -->
+        <section id="latest-hindi" class="collection">
+          <div class="collection-heading">
+            <h2>Latest Hindi</h2>
+          </div>
+          <div
+            class="collection-content collection-content-justfy-Space-Between"
+          >
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+
+            <div class="latest-container">
+              <div class="latest-img-thumbnail">
+                <img
+                  src="./Assest/Image/1.jpeg"
+                  class="latest-img"
+                  width="100%"
+                />
+              </div>
+              <div class="latest-text-content">
+                <p class="latest-title">Song Title</p>
+                <p class="latest-subtitle">AUG 11,2017</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ----------------------------- Queue Content ----------------------------- -->
+      <div id="main-body-right" class="body-content-height">
+        <!-- Explore -->
+        <section class="Queue">
+          <div class="Queue-header-container">
+            <div class="queue-header">
+              <h1>Queue</h1>
+
+              <div class="menu-button">
+                <input type="checkbox" id="queue-menu-checkbox" />
+                <label for="queue-menu-checkbox" class="custom-checkbox-label"
+                  >Queue <i class="fas fa-chevron-down"></i
+                ></label>
+                <div class="menu-dialogbox">
+                  <div class="menu-dialogbox-container">
+                    <div class="menu-dialogbox-item">
+                      <span>Playlist</span>
                     </div>
+                    <hr />
+                    <div class="menu-dialogbox-item">
+                      <span>Add to Favorite</span>
+                    </div>
+                  </div>
                 </div>
-            </section>
-            <!-- Latest Hindi -->
-            <section id="latest-hindi" class="collection">
-                <div class="collection-heading">
-                    <h2>Latest Hindi</h2>
+              </div>
+            </div>
+          </div>
+          <div class="queue-container scroll-content">
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
                 </div>
-                <div class="collection-content collection-content-justfy-Space-Between">
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
 
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
-
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
-
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
-
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
-
-                    <div class="latest-container">
-                        <div class="latest-img-thumbnail">
-                            <img src="./Assest/Image/1.jpeg" class="latest-img" width="100%">
-                        </div>
-                        <div class="latest-text-content">
-                            <p class="latest-title">Song Title</p>
-                            <p class="latest-subtitle">AUG 11,2017</p>
-                        </div>
-                    </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
                 </div>
-            </section>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
 
-        </div>
-
-        <!-- ----------------------------- Queue Content ----------------------------- -->
-        <div id="main-body-right" class="body-content-height" >
-            <!-- Explore -->
-            <section class="Queue">
-                <div class="Queue-header-container">
-                    <div class="queue-header">
-                        <h1>Queue</h1>
-
-                        <div class="menu-button">
-                            <input type="checkbox" id="queue-menu-checkbox">
-                            <label for="queue-menu-checkbox" class="custom-checkbox-label">Queue <i class="fas fa-chevron-down"></i></label>
-                            <div class="menu-dialogbox">
-                                <div class="menu-dialogbox-container">
-                                    <div class="menu-dialogbox-item">
-                                        <span>Playlist</span>
-                                    </div>
-                                    <hr>
-                                    <div class="menu-dialogbox-item">
-                                        <span>Add to Favorite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Song title</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
                 </div>
-                <div class="queue-container scroll-content">
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
 
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span class="song-title">Song title</span>
-                                    <span class="song-subtitle">19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
                                 <i class="fas fa-plus"></i>
                             </span> -->
-                        </div>
-                    </div>
+              </div>
+            </div>
 
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
-                                <i class="fas fa-plus"></i>
-                            </span> -->
-                        </div>
-                    </div>
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
-                                <i class="fas fa-plus"></i>
-                            </span> -->
-                        </div>
-                    </div>
-
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
-                                <i class="fas fa-plus"></i>
-                            </span> -->
-                        </div>
-                    </div>
-
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
-                                <i class="fas fa-plus"></i>
-                            </span> -->
-                        </div>
-                    </div>
-
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
-                                <i class="fas fa-plus"></i>
-                            </span> -->
-                        </div>
-                    </div>
-
-
-                    <div class="PlaylistItem">
-                        <div class="playlist-item-content">
-                            <!-- Song details -->
-                            <div class="song-thumb">
-                                <!-- Song thumbnail and details -->
-                                <p class="song-no">01</p>
-                                <div class="song-img-container">
-                                    <img src="./Assest/Image/1.jpeg" class="song-img">
-                                </div>
-                                <div class="song-detail-container">
-                                    <span>Song title</span>
-                                    <span>19/20/20</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button container -->
-                        <div class="playlist-button-container">
-                            <!-- Like button -->
-                            <span class="song-like-button">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <!-- Add button -->
-                            <!-- <span class="song-add-button">
-                                <i class="fas fa-plus"></i>
-                            </span> -->
-                        </div>
-                    </div>
-                    
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
                 </div>
-            </section>
-        </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
+                                <i class="fas fa-plus"></i>
+                            </span> -->
+              </div>
+            </div>
+
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
+                                <i class="fas fa-plus"></i>
+                            </span> -->
+              </div>
+            </div>
+
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
+                                <i class="fas fa-plus"></i>
+                            </span> -->
+              </div>
+            </div>
+
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
+                                <i class="fas fa-plus"></i>
+                            </span> -->
+              </div>
+            </div>
+
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
+                                <i class="fas fa-plus"></i>
+                            </span> -->
+              </div>
+            </div>
+
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/1.jpeg" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span>Song title</span>
+                    <span>19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <!-- Add button -->
+                <!-- <span class="song-add-button">
+                                <i class="fas fa-plus"></i>
+                            </span> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
-    <!-- Audio player -->
-    <footer class="audio-player" >
-        <div class="audio-player-container">
-            <!-- Audio Information Section -->
-            <div class="audio-information">
-                <div class="playlist-item-content">
-                    <!-- Song details -->
-                    <div class="song-thumb">
-                        <div class="song-img-container">
-                            <img src="./Assest/Image/1.jpeg" class="song-img">
-                        </div>
-                        <div class="song-detail-container">
-                            <span>Song title</span>
-                            <span>19/20/20</span>
-                        </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                         Queue for mobile device                         -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="queue-for-mobile">
+      <input type="checkbox" id="queue-mobile-btn" checked />
+      <label
+        for="queue-mobile-btn"
+        class="queue-mobile-open-btn"
+        id="queue-mobile-btn-open"
+        ><i class="fas fa-chevron-left"></i
+      ></label>
+      <label
+        for="queue-mobile-btn"
+        class="queue-mobile-open-btn"
+        id="queue-mobile-btn-close"
+        ><i class="fas fa-chevron-right"></i
+      ></label>
+
+      <div class="queue-mobile-sidebar-container">
+        <div class="Queue-mbs">
+          <div class="Queue-mbs-header-container">
+            <div class="queue-mbs-header">
+              <h1>Queue</h1>
+
+              <div class="menu-button">
+                <input type="checkbox" id="queue-menu-checkbox-mobile" />
+                <label
+                  for="queue-menu-checkbox-mobile"
+                  class="custom-checkbox-label"
+                  >Queue <i class="fas fa-chevron-down"></i
+                ></label>
+                <div class="menu-dialogbox">
+                  <div class="menu-dialogbox-container">
+                    <div class="menu-dialogbox-item">
+                      <span>Playlist</span>
                     </div>
+                    <hr />
+                    <div class="menu-dialogbox-item">
+                      <span>Add to Favorite</span>
+                    </div>
+                  </div>
                 </div>
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                    <!-- Like button -->
-                    <span class="song-like-button">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </span>
-                </div>
+              </div>
             </div>
-    
-            <!-- Music Player Controls Section -->
-            <div class="music-player-controls">
-                <div class="music-controller-btns">
-                    <button class="audio-button"><i class="fas fa-random"></i></button>
-                    <button class="audio-button"><i class="fas fa-step-backward"></i></button>
-                    <div class="">
-                        <button class="audio-button circle-broder-button"><i class="fas fa-pause"></i></button>
-                    </div>
-                    <button class="audio-button"><i class="fas fa-step-forward"></i></button>
-                    <button class="audio-button"><i class="fas fa-redo-alt"></i></button>
+          </div>
+          <div class="queue-mbs-container scroll-content">
+            <!-- ------------------------------ song list ------------------------------ -->
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">01</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">A Thousand Years</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
                 </div>
-                <div class="duration-tracker">
-                    <span class="current-time">1:39</span>
-                    <div class="song-progress-slider">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="song-progress">
-                    </div>
-                    <span class="total-duration">4:44</span>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">02</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/AfterDark_20220929060847_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Afterdark</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
                 </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
             </div>
-            <!-- Other Audio Controllers Section -->
-            <div class="other-controllers">
-                    <button class="audio-button"><i class="fas fa-stream"></i></button>
-                    <button class="audio-button"><i class="fas fa-laptop"></i></button>
-                    <div class="volume-slider">
-                        <span class="audio-button"><i class="fas fa-volume-up"></i></span>
-                        <input type="range" min="1" max="100" value="50" class="slider" id="volume-slider">
-                    </div>
-                    <button class="audio-button"><i class="fas fa-expand-alt"></i></button>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">03</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Afterlife (Deluxe)</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
             </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">04</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/All-the-Little-Lights-Deluxe-English-2019-20220615025427-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title"
+                      >All The Little Lights (Deluxe)</span
+                    >
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">05</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/american-dream-English-2024-20240112000220-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">American Dream</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">06</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Backslide-English-2024-20240425030143-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Backslide</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">07</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Beautiful-Things-English-2024-20240404023143-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Beautiful Things</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">08</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/BestofHipHopEnglish_20240312052243_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Best of Hip Hop</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">09</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Bling-Bang-Bang-Born-Japanese-2024-20231211114637-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Bling Bang Bang Born</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">10</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Born-To-Die-The-Paradise-Edition-English-2012-20190420034558-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title"
+                      >Born To Die (The Paradise Edition)</span
+                    >
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">11</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/CKay-The-First-English-2019-20190910210730-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Ckay: The First</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">12</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Creatures-In-Heaven-English-2024-20240403213621-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Creatures In Heaven</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">13</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/D-anum-Serbian-2023-20230802184231-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">D Anum (Serbian)</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">14</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Dandelions-English-2017-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Dandelions</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">15</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Dark-Matter-English-2024-20240420232246-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Dark Matter</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">16</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/DECIDE-English-2022-20220904141619-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">17</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Dreamland-English-2020-20200806000748-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Dreamland</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">18</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/EverlastingRomanceNewEnglish_20240201110022_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Everlasting Romance</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">19</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/favorite-English-2024-20240319062315-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">20</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/February-Sky-English-2024-20240411053540-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">February Sky</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">21</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Feel-Something-English-2017-20190607043125-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Feel Something</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">22</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Fountain-Baby-Unknown-2023-20231117040822-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Fountain Baby</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">23</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/FOUR-Deluxe--English-2014-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">24</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/FutureHits_20240424101349_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Future Hits</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">25</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/HappyBirthdayRonanKeating_52583319_20160302_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Happy Birthday Ronan Keating</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">26</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Harleys-In-Hawaii-English-2019-20191015230756-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Harleys In Hawaii</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">27</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/I-like-the-way-you-kiss-me-English-2024-20240316115246-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">I Like The Way You Kiss Me</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">28</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Indigo-Extended--English-2019-20191004165519-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Indigo (Extended)</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">29</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Lady-Lady-English-2018-20180905230524-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">30</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Let-Me-Down-Slowly-English-2018-20190607042218-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Let Me Down Slowly</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">31</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Let-s-Talk-About-Love-English-2006-20191031081854-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Let's Talk About Love</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">32</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Let_sPlayDojaCat_20231018051631_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Let's Play</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">33</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Lovin-On-Me-English-2023-20231110015106-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">34</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/MIDDLE-OF-THE-NIGHT-English-2020-20200210192336-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">35</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/My-Own-Way-English-2015-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">My Own Way</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">36</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/My-World-2-0-English-2010-20200606003742-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">37</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Orgy-of-the-Damned-English-2024-20240212233313-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Orgy Of The Damned</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">38</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/output.txt"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Future Hits</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">39</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Pedro-Italian-2024-20240327202921-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">40</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/People-English-2022-20221207081653-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">41</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Seven-Inches-Of-Satanic-Panic-English-2019-20190913033328-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title"
+                      >Seven Inches Of Satanic Panic</span
+                    >
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">42</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/STRAY-English-2024-20240423120852-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">43</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Tarantula-Heart-English-2024-20240416092423-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Tarantula Heart</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">44</p>
+                  <div class="song-img-container">
+                    <img src="./Assest/Image/songs/test.py" class="song-img" />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Test</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">45</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/The-Piper-s-Call-English-2024-20240423112409-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">The Piper's Call</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">46</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/TreadmillPop_20240408082613_150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Treadmill Pop</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">47</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Unheard-English-2024-20240322064003-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">48</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/UTOPIA-English-2023-20230728085013-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">49</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Vol-1-Music-from-the-HBO-Original-Series-English-2023-20230610103407-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title"
+                      >Vol. 1: Music From The HBO Original Series</span
+                    >
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">50</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Wasteland-Baby-Special-Edition-English-2024-20240419063446-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title"
+                      >Wasteland Baby (Special Edition)</span
+                    >
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">51</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Way Down We Go</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+            <div class="PlaylistItem">
+              <div class="playlist-item-content">
+                <!-- Song details -->
+                <div class="song-thumb">
+                  <!-- Song thumbnail and details -->
+                  <p class="song-no">52</p>
+                  <div class="song-img-container">
+                    <img
+                      src="./Assest/Image/songs/WMG_190295851286-English-2017-150x150.jpg"
+                      class="song-img"
+                    />
+                  </div>
+                  <div class="song-detail-container">
+                    <span class="song-title">Unknown</span>
+                    <span class="song-subtitle">19/20/20</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Audio player                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="audio-player">
+      <div class="audio-player-container">
+        <!-- Audio Information Section -->
+        <div class="audio-information">
+          <div class="playlist-item-content">
+            <!-- Song details -->
+            <div class="song-thumb">
+              <div class="song-img-container">
+                <img src="./Assest/Image/1.jpeg" class="song-img" />
+              </div>
+              <div class="song-detail-container">
+                <span>Song title</span>
+                <span>19/20/20</span>
+              </div>
+            </div>
+          </div>
+          <!-- Button container -->
+          <div class="playlist-button-container">
+            <!-- Like button -->
+            <span class="song-like-button">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Music Player Controls Section -->
+        <div class="music-player-controls">
+          <div class="music-controller-btns">
+            <button class="audio-button"><i class="fas fa-random"></i></button>
+            <button class="audio-button">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <div class="">
+              <button class="audio-button circle-broder-button">
+                <i class="fas fa-pause"></i>
+              </button>
+            </div>
+            <button class="audio-button">
+              <i class="fas fa-step-forward"></i>
+            </button>
+            <button class="audio-button">
+              <i class="fas fa-redo-alt"></i>
+            </button>
+          </div>
+          <div class="duration-tracker">
+            <span class="current-time">1:39</span>
+            <div class="song-progress-slider">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider"
+                id="song-progress"
+              />
+            </div>
+            <span class="total-duration">4:44</span>
+          </div>
+        </div>
+        <!-- Other Audio Controllers Section -->
+        <div class="other-controllers">
+          <button class="audio-button"><i class="fas fa-stream"></i></button>
+          <button class="audio-button"><i class="fas fa-laptop"></i></button>
+          <div class="volume-slider">
+            <span class="audio-button"><i class="fas fa-volume-up"></i></span>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="volume-slider"
+            />
+          </div>
+          <button class="audio-button">
+            <i class="fas fa-expand-alt"></i>
+          </button>
+        </div>
+      </div>
     </footer>
-    
 
-    <script src="https://kit.fontawesome.com/02d7c981a5.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/02d7c981a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
