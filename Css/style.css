@@ -703,6 +703,7 @@ html, body{
     flex-direction: column;
     align-items:space-around;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .latest-img-thumbnail{
@@ -722,15 +723,15 @@ html, body{
 }
 
 .latest-title{
-    font-size: var(--font-size-smallest-paragraph);
+    font-size: var(--font-size-smaller-paragraph);
     font-weight: var(--font-weight-subtitle);
-    color: var(--font-color-1);
+    color: var(--primary-font-color);
     margin: 0px;
     padding: 0px;
 }
 .latest-subtitle{
     font-size:var(--font-size-smallest-paragraph);
-    font-weight: var(--font-weight-subtitle);
+    font-weight: var(--font-weight-smallest-paragraph);
     color: var(--font-color-2);
     margin: 0px;
     padding: 0px;
