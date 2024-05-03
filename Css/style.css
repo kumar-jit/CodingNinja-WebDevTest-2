@@ -39,6 +39,8 @@
     --font-size-smallest-paragraph-4: 0.2rem;
 
     /* font-weight */
+    --font-weight-Extlarge: 900;
+    --font-weight-large: 800;
     --font-weight-title: 700;
     --font-weight-subtitle: 550;
     --font-weight-paragraph: 300;
@@ -49,6 +51,7 @@
 
     /* button front */
     --font-button-size-noraml: 1rem;
+    --font-button-size-mid: 1.2rem;
     --font-button-size-large: 1.5rem;
     --font-button-size-largest: 2rem;
     --font-button-size-small: 0.8rem;
@@ -94,7 +97,7 @@ html, body{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* background-color: var(--primary-color); */
+    background-color: var(--primary-color);
     font-size: 15px;
     overflow: hidden;
 }
@@ -391,7 +394,7 @@ html, body{
 .collection-heading > h4,h3,h2{
     padding: 0px;
     margin: 0px;
-    /* border: 1px solid black; */
+    color: var(--primary-font-color);
 }
 
 
@@ -436,6 +439,7 @@ html, body{
     width: 48%;
     position: relative;
     margin-bottom: 0.6rem;
+    cursor: pointer;
 }
 /* Song thumbnail image style */
 .song-thumbnail-img-container{
@@ -473,6 +477,14 @@ html, body{
     margin: 0px;
     padding: 0px;
 }
+.song-title-big{
+    font-size: var(--font-size-small-paragraph);
+    font-weight: var(--font-weight-small-paragraph);
+    color: var(--primary-font-color);
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Song thumbnail subtitle */
 .song-subtitle{
     font-size: var(--font-size-smaller-paragraph);
@@ -481,6 +493,14 @@ html, body{
     margin: 0px;
     padding: 0px;
 }
+.song-subtitle-big{
+    font-size: var(--font-size-smaller-paragraph);
+    font-weight: var(--font-weight-small-paragraph);
+    color: var(--third-font-color);
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Song thumbnail other text */
 .song-other-title-small{
     font-size: var(--font-size-paragraph);
@@ -518,27 +538,69 @@ html, body{
     width: 100%;
     border-radius: 50%;
 }
+.artist-profile{
+    position: relative;
+    cursor: pointer;
+}
+
+.artist-profile:hover::after{
+    width: 100%;
+    text-rendering: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font: var(--fa-font-solid);
+    content: '\f04b';
+    color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    font-size: var(--font-button-size-large);
+}
+
+/* to apply a black overlay on hover */
+.artist-profile:hover > .artist-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.artist-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure the overlay appears on top of the image */
+    pointer-events: none; /* Allow clicking through the overlay */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+
 /* artist name styling */
 .artist-profile-name{
     font-size: var(--font-size-subtitle);
-    font-weight: var(--font-weight-subtitle);
-    color: var(--font-color-1);
+    font-weight: var(--font-weight-small-paragraph);
+    color: var(--primary-font-color);
     margin: 0px;
     padding: 0px;
 }
 
 /* ------------------------------- Song Gener ------------------------------- */
 
+/* Collection content in the song genre section */
 #song-genre .collection-content{
-    border: 1px solid black;
     align-items: center;
     padding:0.8rem;
-    background-color: var(--font-color-7);
+    background-color: var(--third-color);
 }
+
+/* Styling for station images */
 .station-img{
     width: 15%;
 }
 
+/* Genre list box */
 .genre-list-box{
     box-sizing:border-box;
     width: 80%;
@@ -548,29 +610,45 @@ html, body{
     justify-content: space-around;
 }
 
+/* Thumbnail container for genres */
 .genre-thumbnail{
     width: 15%;
     position: relative;
     text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Styling for genre names */
 .genre-name{
-    font-size: var(--font-size-subtitle);
-    font-weight: var(--font-weight-title);
-    color: var(--font-color-3);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-subtitle);
+    color: var(--primary-font-color);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   /*making center text center*/
     box-sizing: border-box;
+    text-shadow: 0px 0px 5px var(--primary-color);
 }
+
+/* Styling for genre images */
 .genre-img{
     width: 100%;
     border-radius: 50%;
+    filter: blur(0.5px); /* Adding a blur effect to genre images */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Zoom effect on hover for genre images */
+.genre-thumbnail:hover .genre-img{
+    transform: scale(1.3);
 }
 
 /* ---------------------------------- Mood ---------------------------------- */
-
+/* Container for mood items */
 .mood-container {
     width: 100%;
     display: flex;
@@ -578,26 +656,40 @@ html, body{
     justify-content: space-between;
 }
 
+/* Container for mood images */
 .mood-img-container {
     width: 32%;
-    height: 9rem;
-    background-image: url(../Assest/Image/2.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
     position: relative;
+    max-height: 15rem;
     overflow: hidden;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.mood-img-container > p{
-    color: var(--font-color-1);
-    font-size: var(--font-size-subtitle);
+/* Zoom effect on hover for mood images */
+.mood-img-container:hover > .mood-img{
+    transform: scale(1.4);
+}
+
+/* Styling for mood images */
+.mood-img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Styling for mood names */
+.mood-name{
+    font-size: var(--font-button-size-mid);
     font-weight: var(--font-weight-subtitle);
+    color: var(--primary-font-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /*making center text center*/
+    box-sizing: border-box;
+    text-shadow: 0px 0px 8px var(--primary-color);
 }
 
 /* ------------------------ Latest Song Engilsh/Hindi ----------------------- */
@@ -1159,5 +1251,8 @@ html, body{
 @media screen and (max-width: 668px) {
     .navBar-ul, .nav-search-box,  .nav-notification{
         display: none;
+    }
+    html,body{
+        font-size: 12px;
     }
 }
