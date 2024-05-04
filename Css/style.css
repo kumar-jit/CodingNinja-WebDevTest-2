@@ -7,10 +7,7 @@
     --secondary-color: 	#0e1c4f;
     --third-color: #132765;
     --fourth-color: #1c398d;
-    --fifth-color: #000000;
-    --sixth-color: #000000;
-    --seventh-color: #000000;
-    --eighth-color: #000000;
+    --fifth-color: #282828;
 
     --primary-font-color:rgb(236, 236, 236);
     --secondary-font-color:rgba(255, 255, 255, 0.733);
@@ -66,7 +63,7 @@
     --nav-height-px: 70px;
 
     /* footer height */
-    --footer-height-rem: 4.5rem;
+    --footer-height-rem: 5rem;
     --footer-height-px: 70px;
 
     /* remaning body height */
@@ -873,7 +870,7 @@ html, body{
     justify-content: space-around;
 
 }
-.song-detail-container > span {
+.song-detail-container > * {
     margin-bottom: 0.3rem;
 }
 
@@ -885,7 +882,7 @@ html, body{
 
 /* Styles for all elements inside the button container */
 .playlist-button-container * {
-    margin: 0 0.4rem;
+    margin: 0 0.2rem;
 }
 
 .song-like-button{
@@ -894,19 +891,25 @@ html, body{
 
 
 /* --------------------------- audio-player-Footer -------------------------- */
+
+
 .audio-player{
     width: 100vw;
     position: fixed;
     bottom: 0;
-    background-color: #646464; 
+    background-color: var(--fifth-color); 
     height: var(--footer-height-rem);
+    margin: 0px;
+    padding: 0px;
 }
+
 .audio-player-container{
-    margin: 0.6rem 5%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 3%;
+    height: inherit;
 }
 
 /* Music information */
@@ -916,17 +919,17 @@ html, body{
     width: 24%;
 }
 
-/* music controller */
+/* Music Player Controls Section */
 .music-player-controls{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 35%;
 }
 
 .music-controller-btns{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 60%;
     margin: auto;
 }
@@ -939,6 +942,7 @@ html, body{
 
 .duration-tracker > span{
     width: max-content;
+    color: var(--third-font-color);
 }
 
 .song-progress-slider{
@@ -950,44 +954,70 @@ html, body{
     width: 100%;
 }
 
-/* Other controller */
+/* audio player other controller  */
 .other-controllers{
     width: 24%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 20rem;
+    box-sizing: border-box;
+}
+.other-controllers > * {
+    margin-right: 0.2rem;
+}
+
+.other-btn-div{
+    width: 16%;
 }
 
 .volume-slider{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 45%;
 }
-
-.volume-slider > span{
-    margin-right: 0.8rem;
+.volume-slider span{
+    margin-right:0.3rem ;
 }
 #volume-slider{
-    width: 6rem;
+    width: 70%;
+    max-width: 8.8rem;
 }
 
-/* common class of footer */
+/* Audio player controller btn style */
 .audio-button{
     background-color: transparent;
     border: none;
-    font-size: var(--font-button-size-smallest-1);
+    font-size: var(--font-button-size-noraml);
     font-weight: var(--font-button-size-noraml);
-    color: var(--font-color-1);
+    color: var(--third-font-color);
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.audio-button:hover{
+    color: white;
 }
 
-.circle-broder-button{
-    border: 2px solid var(--font-color-1);
-    border-radius: 50%;
-    padding: 0.5rem;   /* border will make distance from content */
-    display: flex;  
-    margin: auto;   /* helo a perfect circle */
-}
+/* audio player album cover */
+.song-img-mid{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+  }
+  .song-detail-container marquee {
+    overflow: hidden;
+    position: relative;
+  }
+  .song-detail-container marquee::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--fifth-color) 100%);
+  }
 
 /* -------------------------------------------------------------------------- */
 /*                                Common Class                                */
@@ -1048,7 +1078,6 @@ html, body{
   }
   .menu-dialogbox-item{
     cursor: pointer;
-
   }
 
 
@@ -1071,6 +1100,23 @@ html, body{
     #main-body-left{
         width: 100%;
         box-sizing: border-box;
+    }
+
+    /* ------------------------------ Audio player ------------------------------ */
+
+    /* hiding  less required button */
+    .duration-tracker,.other-btn-div{
+        display: none;
+    }
+
+    /* expanding required button size */
+    .music-controller-btns,.volume-slider{
+        width: 100%;
+    }
+
+    /* expanding audio information */
+    .audio-information{
+        width: 30%;
     }
 
     /* ------------------------------- Song Queue Mobile ------------------------------- */
@@ -1186,10 +1232,6 @@ html, body{
 
     /* ------------------------------ Footer music ------------------------------ */
 
-    .audio-player-container{
-        margin: 1rem 2%;
-    }
-
 
  /* -------------------------- poster type-2 Sldier -------------------------- */
 
@@ -1250,10 +1292,11 @@ html, body{
 }
 
 @media screen and (max-width: 668px) {
-    .navBar-ul, .nav-search-box,  .nav-notification{
+    .navBar-ul{
         display: none;
     }
     html,body{
         font-size: 12px;
     }
 }
+
