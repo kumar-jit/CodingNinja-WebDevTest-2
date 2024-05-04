@@ -1300,3 +1300,40 @@ html, body{
     }
 }
 
+
+@media screen and (max-width: 480px) {
+    /* hiding  less required button */
+    .duration-tracker,.other-controllers,.nav-notification{
+        display: none;
+    }
+
+    /* expanding required button size */
+    .music-controller-btns{
+        width: 100%;
+    }
+
+    /* expanding audio information */
+    .audio-information,.music-player-controls{
+        width: 40%;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    /* hiding  less required button */
+    .duration-tracker,.other-controllers,.nav-notification{
+        display: none;
+    }
+
+    /* expanding required button size */
+    .music-controller-btns{
+        width: 100%;
+    }
+
+    /* expanding audio information */
+    .audio-information,.music-player-controls{
+        width: 40%;
+    }
+    
+}
