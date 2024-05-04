@@ -448,7 +448,7 @@ html, body{
 
 /* song thumbnail title and subtitle styling */
 .song-thumbnail-content{
-    width: 68%;
+    width: 66%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -696,7 +696,6 @@ html, body{
 .latest-container{
     display: flex;
     width: 15.5%;
-    /* border: 1px solid black; */
     flex-direction: column;
     align-items:space-around;
     justify-content: space-between;
@@ -1085,6 +1084,10 @@ html, body{
 /* -------------------------------- end test -------------------------------- */
 
 
+/* -------------------------------------------------------------------------- */
+/*                       Adjustment for Screen size 768                       */
+/* -------------------------------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
 
     html,body{
@@ -1291,6 +1294,11 @@ html, body{
 
 }
 
+
+/* -------------------------------------------------------------------------- */
+/*                       Adjustment for Screen size 668                       */
+/* -------------------------------------------------------------------------- */
+
 @media screen and (max-width: 668px) {
     .navBar-ul{
         display: none;
@@ -1301,7 +1309,14 @@ html, body{
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                       Adjustment for Screen size 480                       */
+/* -------------------------------------------------------------------------- */
+
 @media screen and (max-width: 480px) {
+    html,body{
+        font-size: 15px;
+    }
     /* hiding  less required button */
     .duration-tracker,.other-controllers,.nav-notification{
         display: none;
@@ -1315,14 +1330,36 @@ html, body{
     /* expanding audio information */
     .audio-information,.music-player-controls{
         width: 40%;
+    }
+
+    .song-thumbnail{
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    /* Adjusting latest container  for lower screen size */
+    .latest-container{
+        width: 30%;
+    }
+
+    /* Adjusting Navbar element for lower screen size */
+    .nav-bar-right-container{
+        width: 60%;
+    }
+    #song-search{
+        width: 80%;
     }
     
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                       Adjustment for Screen size 400                       */
+/* -------------------------------------------------------------------------- */
+
 @media screen and (max-width: 400px) {
     /* hiding  less required button */
-    .duration-tracker,.other-controllers,.nav-notification{
+    .duration-tracker,.other-controllers,.nav-notification,.user-profile-img{
         display: none;
     }
 
@@ -1335,5 +1372,17 @@ html, body{
     .audio-information,.music-player-controls{
         width: 40%;
     }
+
+    /* Adjusting latest Hindi and English  for lower screen size */
+    .song-thumbnail{
+        width: 95%;
+        justify-content: space-around;
+    }
+
+    /* Adjust navbar search for lower screen */
+    .nav-bar-right-container > * {
+        margin-left: 0rem; 
+    }
+    
     
 }
