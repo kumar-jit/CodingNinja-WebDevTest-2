@@ -3,10 +3,10 @@
 /* -------------------------------------------------------------------------- */
 :root{
 
-    --primary-color: #0b1941;
-    --secondary-color: 	#0e1c4f;
-    --third-color: #132765;
-    --fourth-color: #1c398d;
+    --primary-color: #0A2647;
+    --secondary-color: 	#144272;
+    --third-color: #205295;
+    --fourth-color: #2C74B3;
     --fifth-color: #282828;
 
     --primary-font-color:rgb(236, 236, 236);
@@ -377,7 +377,7 @@ html, body{
     justify-content: start;
     width: 100%;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .collection-heading{
@@ -520,6 +520,13 @@ html, body{
 #menu-checkbox-3:checked ~ .menu-dialogbox, 
 #menu-checkbox-4:checked ~ .menu-dialogbox{
     height: auto;
+}
+
+.song-thumbnail-menu-button .menu-button .menu-dialogbox .menu-dialogbox-container .menu-dialogbox-item{
+    font-size: var(--font-button-size-small);
+}
+.song-thumbnail-menu-button .menu-button .menu-dialogbox .menu-dialogbox-container .menu-dialogbox-item span{
+    margin-right: 0.5rem;
 }
 
 
@@ -830,7 +837,13 @@ html, body{
     width: 100%;
     height: 4rem;
     margin-top: 1rem;
+}
+
+.queue-header h1{
     color: var(--primary-font-color);
+}
+.queue-header .menu-button .custom-checkbox-label {
+    color: #0ad4a9;
 }
 
 /* .Queue-header-container::after{
@@ -860,6 +873,7 @@ html, body{
 #queue-menu-checkbox-mobile:checked ~ .menu-dialogbox{
     height: auto;
 }
+
 
  /* --------------------------- Playlist-item-class -------------------------- */
 
@@ -1151,7 +1165,7 @@ html, body{
   
   .menu-dialogbox-container{
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     flex-direction: column;
     width: max-content;
     height: max-content;
@@ -1161,10 +1175,15 @@ html, body{
     border: none;
     height: 2px;
     background-color: rgba(102, 102, 102, 0.76);
+    margin: 0.3rem 0;
   }
   .menu-dialogbox-item{
     cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
+
 
 
 /* ---------------------------------- test ---------------------------------- */
@@ -1318,6 +1337,10 @@ html, body{
         box-sizing: border-box;
         height: calc(calc(100vh - var(--queue-list-height-mobile)) - 2rem);
         transition: all  0.4s ease-in-out;
+    }
+
+    .queue-mbs-header .menu-button .custom-checkbox-label {
+        color: #0ad4a9;
     }
 
     /* ------------------------------ Footer music ------------------------------ */
