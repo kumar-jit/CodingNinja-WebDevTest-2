@@ -97,8 +97,12 @@ html, body{
     background-color: var(--primary-color);
     font-size: 15px;
     overflow: hidden;
+    
 }
-
+body > *{
+    transition: all 1s ease-in-out;
+    scroll-behavior: smooth;
+}
 /* -------------------------------------------------------------------------- */
 /*                                   Nav Bar                                  */
 /* -------------------------------------------------------------------------- */
