@@ -9,7 +9,7 @@
     --fourth-color: #2C74B3;
     --fifth-color: #282828;
 
-    --primary-font-color:rgb(236, 236, 236);
+    --primary-font-color:rgb(255, 255, 255);
     --secondary-font-color:rgba(255, 255, 255, 0.733);
     --third-font-color:rgb(167, 167, 167);
 
@@ -86,6 +86,8 @@
 
     /* bottom fade effect height */
     --bottom-fade-effect-height: 2rem;
+
+    --sim-art-height-rem: calc(100vh - var(--used--height-body));
 }
 
 
@@ -100,9 +102,14 @@ html, body{
     
 }
 body > *{
-    transition: all 1s ease-in-out;
+    transition: all 0.8s ease-in-out;
     scroll-behavior: smooth;
 }
+
+/* ############################################################################################################################ */
+/* ######################################################## Index Page ######################################################## */
+/* ############################################################################################################################ */
+
 /* -------------------------------------------------------------------------- */
 /*                                   Nav Bar                                  */
 /* -------------------------------------------------------------------------- */
@@ -1123,6 +1130,172 @@ body > *{
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--fifth-color) 100%);
   }
 
+/* ############################################################################################################################ */
+/* ####################################################### Artists page ####################################################### */
+/* ############################################################################################################################ */
+
+.artists-poster{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+/* ---------------------------- || --------------------------- */
+ /* card box contaier style */
+.card-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    border: 1px solid rgb(241, 8, 191);
+    /* position: relative; */
+}
+
+
+/* ---------------------------- || --------------------------- */
+/* Card-box image container style */
+.card-box-img-container{
+    /* width: 40%; */
+    border: 1px solid rgb(253, 54, 28);
+    max-height: 20rem;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0.2rem;
+    display: block;
+}
+/* card-imge with */
+.card-box-img{
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    min-width: 20rem;
+}
+
+
+
+/* ---------------------------- || --------------------------- */
+/* card box information section */
+.card-box-info-content{
+    width: 70%;
+    /* border: 1px solid rgb(219, 253, 28); */
+    padding-left: 0.6rem;
+    padding-right: 0.2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+
+/* ---------------------------- || --------------------------- */
+.card-box-body-content{
+
+}
+/* ------------------------ || -------------------- */
+.card-box-head-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.card-head-title-container h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+.card-head-title{
+    color: var(--primary-font-color);
+}
+.card-subtitle{
+    color: var(--secondary-font-color);
+    font-weight: var(--font-weight-paragraph);
+    font-size: var(--font-size-paragraph);
+}
+/* ------------------------ || -------------------- */
+.card-box-text{
+    color: var(--secondary-font-color);
+    font-weight: var(--font-weight-smaller-paragraph);
+    font-size: var(--font-size-smaller-paragraph);
+}
+
+
+/* ---------------------------- || --------------------------- */
+.card-box-btn-container{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 18rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    min-width: 10rem;
+}
+.card-box-btn{
+    border: none;
+    background: transparent;
+    color: var(--primary-font-color);
+    font-size: var(--font-button-size-noraml);
+    padding: 0.7rem 0;
+    /* margin-right: 1.5rem; */
+    width: 50%;
+    box-sizing: border-box;
+}
+.btn-bg-gradient{
+    background-image: linear-gradient(to right, #3a27e4, #d34ef8 60%);
+}
+
+
+.card-other-info{
+    color: var(--secondary-font-color);
+    font-weight: var(--font-weight-smaller-paragraph);
+    font-size: var(--font-size-smaller-paragraph);
+}
+
+.d-flex-r{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.width-100{
+    width: 95%;
+}
+.d-flex-c{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.art-right-asid{
+    height: var(--sim-art-height-rem);
+    width: 100%;
+    border: 1px solid rgb(235, 212, 13);
+}
+
+.similar-art-container{
+    height: 40%;
+    width: 100%;
+    border: 1px solid white;
+}
+.recent-play-container{
+    height: 55%;
+    width: 100%;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                Common Class                                */
 /* -------------------------------------------------------------------------- */
@@ -1189,16 +1362,65 @@ body > *{
   }
 
 
+/* ############################################################################################################################ */
+/* ############################################# Based on Screen size (Resposive) ############################################# */
+/* ############################################################################################################################ */
 
-/* ---------------------------------- test ---------------------------------- */
-/* -------------------------------- end test -------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                       Adjustment for Screen size 1100                      */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
 
+    .card-box{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Card-box image container style */
+    .card-box-img-container{
+        width: 100%;
+        border: 1px solid rgb(253, 54, 28);
+        height: max-content;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    /* card-imge with */
+    .card-box-img{
+        max-width: 25rem;
+        max-height: 25rem;
+    }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                       Adjustment for Screen size 768                       */
 /* -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+    .card-box{
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+    .card-box-img-container{
+        /* width: 40%; */
+        border: 1px solid rgb(253, 54, 28);
+        max-height: 25rem;
+        width: auto;
+        position: relative;
+        overflow: hidden;
+        margin: 0 0.2rem;
+        display: block;
+    }
+    /* card-imge with */
+    .card-box-img{
+        height: auto;
+        width: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
 
     html,body{
         font-size: 15px;
