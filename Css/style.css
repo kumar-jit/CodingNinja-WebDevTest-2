@@ -900,39 +900,28 @@ body > *{
     padding: 5px;
     cursor: pointer;
     overflow: visible;
+    box-sizing: border-box;
 }
 
 .PlaylistItem:hover{
     background-color: var(--third-color);
 }
 
-.PlaylistItem:hover > .playlist-item-content > .song-thumb > .song-img-container::after{
-    width: 100%;
-    z-index: inherit;
+.PlaylistItem:hover > .song-thumb > .song-img-container::after{
+    color: white;
 }
-.queue-container .PlaylistItem:hover > .playlist-item-content > .song-thumb > .song-img-container::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.37);
-    top: 0px;
-    left: 0px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.445);
-
+.PlaylistItem:hover > .song-thumb > .song-img-container > .playlistItem-img-overlay{
+    background-color: rgba(53, 229, 252, 0.178); 
 }
 
-/* Styles for the content of the PlaylistItem */
-.playlist-item-content {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-}
+
 
 /* Styles for the song thumbnail */
 .song-thumb {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    margin: 0.2rem 0.3rem;
+    box-sizing: border-box;
 }
 
 /* Styles for the song number */
@@ -954,6 +943,22 @@ body > *{
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 0.5rem;
+    box-shadow: 0px 0px 0.6rem 0px rgba(255, 255, 255, 0.24);
+    display: block;
+    
+
+}
+.playlistItem-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 229, 252, 0); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure the overlay appears on top of the image */
+    pointer-events: none; /* Allow clicking through the overlay */
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
 }
 
 /* Play button on hover */
@@ -967,10 +972,9 @@ body > *{
     text-align: center;
     font: var(--fa-font-solid);
     content: '\f04b';
-    color: white;
-    width: 0px;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
+    color: rgba(255, 255, 255, 0);
+    width: 100%;
+    transition: all 0.5s ease;
 }
 
 
@@ -994,13 +998,16 @@ body > *{
 /* Styles for all elements inside the button container */
 .playlist-button-container * {
     margin: 0 0.2rem;
-}
-
-.song-like-button{
     color: var(--third-font-color);
 }
 
+/* .song-like-button{
+    color: var(--third-font-color);
+} */
 
+.song-duration{
+    margin-right: 1rem !important;
+}
 /* --------------------------- audio-player-Footer -------------------------- */
 
 
@@ -1134,12 +1141,13 @@ body > *{
 /* ####################################################### Artists page ####################################################### */
 /* ############################################################################################################################ */
 
+
+/* --------------------------- Arties Poster Card --------------------------- */
 .artists-poster{
     width: 100%;
-    border: 1px solid black;
     margin-top: 2vh;
 }
-/* ---------------------------- || --------------------------- */
+/* ---------------------------- card container --------------------------- */
  /* card box contaier style */
 .card-box{
     width: 100%;
@@ -1147,51 +1155,77 @@ body > *{
     align-items: center;
     justify-content: start;
     box-sizing: border-box;
-    border: 1px solid rgb(241, 8, 191);
+    /* border: 1px solid rgb(241, 8, 191); */
+    background-color: var(--secondary-color);
     /* position: relative; */
 }
 
 
-/* ---------------------------- || --------------------------- */
+
+/* ─── Card-image ─────────────────────────────────────────────────────────── */
 /* Card-box image container style */
 .card-box-img-container{
-    /* width: 40%; */
-    border: 1px solid rgb(253, 54, 28);
-    max-height: 20rem;
-    width: auto;
+    width: 18rem;
+    height: 18rem;
     position: relative;
     overflow: hidden;
     margin: 0 0.2rem;
-    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 /* card-imge with */
 .card-box-img{
-    height: auto;
-    width: auto;
-    max-height: 100%;
-    min-width: 20rem;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    background-image: url('../Assest/Image/bp11.jpg');
+    /* background-position: center; */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+/* card image vignetting effect */
+.card-box-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+    box-shadow: inset 0 -42px 30px var(--secondary-color);
+    background-color: transparent;
+}
+/* card image vignetting effect */
+.card-box-img::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius:34%;
+    border-bottom-right-radius:34%;
+    box-shadow: 0 70px 20px 50px  var(--secondary-color);
+    background-color: transparent;
 }
 
 
-
-/* ---------------------------- || --------------------------- */
+/* ─── Card-content ───────────────────────────────────────────────────────── */
 /* card box information section */
 .card-box-info-content{
     width: 70%;
     /* border: 1px solid rgb(219, 253, 28); */
     padding-left: 0.6rem;
-    padding-right: 0.2rem;
+    padding-right: 0.5rem;
     overflow: hidden;
     box-sizing: border-box;
 
 }
 
+/* ─── Card Text Decoration Title Subtitle Text ───────────────────────────── */
 
-/* ---------------------------- || --------------------------- */
-.card-box-body-content{
-
-}
-/* ------------------------ || -------------------- */
 .card-box-head-container{
     justify-content: space-between;
     align-items: center;
@@ -1209,15 +1243,18 @@ body > *{
     font-weight: var(--font-weight-paragraph);
     font-size: var(--font-size-paragraph);
 }
-/* ------------------------ || -------------------- */
 .card-box-text{
     color: var(--secondary-font-color);
     font-weight: var(--font-weight-smaller-paragraph);
     font-size: var(--font-size-smaller-paragraph);
 }
+.card-other-info{
+    color: var(--secondary-font-color);
+    font-weight: var(--font-weight-smaller-paragraph);
+    font-size: var(--font-size-smaller-paragraph);
+}
 
-
-/* ---------------------------- || --------------------------- */
+/* ─── Card Button Style ──────────────────────────────────────────────────── */
 .card-box-btn-container{
     width: 100%;
     align-items: center;
@@ -1241,11 +1278,23 @@ body > *{
     background-image: linear-gradient(to right, #3a27e4, #d34ef8 60%);
 }
 
+/* ---------------------- Artists Song Collection List ---------------------- */
+.artists-song-collection{
+    margin-top: 0.8rem;
+}
+.artists-music-collection-containt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.card-other-info{
-    color: var(--secondary-font-color);
-    font-weight: var(--font-weight-smaller-paragraph);
-    font-size: var(--font-size-smaller-paragraph);
+.artists-music-collection-containt .PlaylistItem{
+    background-color: #1a1e33a9;
+    transition: all 0.3s ease;
+}
+.artists-music-collection-containt .PlaylistItem:hover{
+    background-image:linear-gradient(to right,#232842b7 70%, #1a1e33a9);
 }
 
 .d-flex-r{
@@ -1279,16 +1328,6 @@ body > *{
     width: 100%;
     border: 1px solid white;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1366,11 +1405,14 @@ body > *{
 /* ############################################# Based on Screen size (Resposive) ############################################# */
 /* ############################################################################################################################ */
 
+
 /* -------------------------------------------------------------------------- */
 /*                       Adjustment for Screen size 1100                      */
 /* -------------------------------------------------------------------------- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
 
+    /* --------------------------- Artists poster card -------------------------- */
+    /* card content to center */
     .card-box{
         flex-wrap: wrap;
         align-items: center;
@@ -1380,17 +1422,20 @@ body > *{
     /* Card-box image container style */
     .card-box-img-container{
         width: 100%;
-        border: 1px solid rgb(253, 54, 28);
-        height: max-content;
-        position: relative;
-        overflow: hidden;
+        height: 20rem;
         display: flex;
         justify-content: center;
     }
-    /* card-imge with */
+
+    /* chaing the artiest image size */
     .card-box-img{
-        max-width: 25rem;
-        max-height: 25rem;
+        background-image: url('../Assest/Image/bp169.jpg');
+    }
+
+    /* adjust the info content size */
+    .card-box-info-content{
+        margin-top: 1.2rem;
+        width: 90%;
     }
 }
 
@@ -1399,28 +1444,7 @@ body > *{
 /* -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
-    .card-box{
-        flex-wrap: nowrap;
-        justify-content: start;
-    }
-    .card-box-img-container{
-        /* width: 40%; */
-        border: 1px solid rgb(253, 54, 28);
-        max-height: 25rem;
-        width: auto;
-        position: relative;
-        overflow: hidden;
-        margin: 0 0.2rem;
-        display: block;
-    }
-    /* card-imge with */
-    .card-box-img{
-        height: auto;
-        width: auto;
-        max-height: 100%;
-        max-width: 100%;
-    }
-    
+
 
     html,body{
         font-size: 15px;
@@ -1671,6 +1695,24 @@ body > *{
         width: 15%;
     }
 
+    /* --------------------------- Artists Poster Card -------------------------- */
+    .card-box{
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+    .card-box-img-container{
+        width: 18rem;
+        height: 18rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        overflow: hidden;
+    }
+     /* chaing the artiest image size */
+     .card-box-img{
+        background-image: url('../Assest/Image/bp11.jpg');
+    }
+
 }
 
 
@@ -1761,6 +1803,33 @@ body > *{
     .artist-profile-thumbnail{
         width: 30%;
         margin-top: 0.5rem;
+    }
+
+    /* --------------------------- Artists poster card -------------------------- */
+    /* card content to center */
+    .card-box{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Card-box image container style */
+    .card-box-img-container{
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* chaing the artiest image size */
+    .card-box-img{
+        background-image: url('../Assest/Image/bp169.jpg');
+    }
+
+    /* adjust the info content size */
+    .card-box-info-content{
+        margin-top: 1.2rem;
+        width: 90%;
     }
 
     
