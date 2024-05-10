@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Music App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/3c83563040.js"
       crossorigin="anonymous"
@@ -28,9 +35,9 @@
       <!-- ---------------------------- nav left-Side ---------------------------- -->
       <div class="nav-bar-inner-container nav-bar-left-container">
         <!-- Nav Logo -->
-        <div class="nav-logo">
-          <img src="Assest/Image/Ninja Logo/logo.png" id="logo" />
-        </div>
+        <a href="./index.html" class="nav-logo">
+          <img src="Assest/LowResImg/Ninja Logo/logo.png" id="logo" />
+        </a>
         <!-- Other List  like Favourites-->
         <ul class="navBar-ul">
           <li>
@@ -54,7 +61,7 @@
         <!-- User Profile -->
         <div class="nav-user-profile">
           <img
-            src="./Assest/LowResImg/1.jpeg"
+            src="./Assest/LowResImg/profile.jpg"
             class="user-profile-img"
             id="user-profile-img"
           />
@@ -88,31 +95,31 @@
 
             <label class="slider-poster-container" for="sImg1" id="slider1">
               <img
-                src="Assest/Image/Posters/poster (1).jpg"
+                src="Assest/LowResImg/Posters/poster (1).jpg"
                 class="slider-image"
               />
             </label>
             <label class="slider-poster-container" for="sImg2" id="slider2">
               <img
-                src="Assest/Image/Posters/poster (2).jpg"
+                src="Assest/LowResImg/Posters/poster (2).jpg"
                 class="slider-image"
               />
             </label>
             <label class="slider-poster-container" for="sImg3" id="slider3">
               <img
-                src="Assest/Image/Posters/poster (3).jpg"
+                src="Assest/LowResImg/Posters/poster (3).jpg"
                 class="slider-image"
               />
             </label>
             <label class="slider-poster-container" for="sImg4" id="slider4">
               <img
-                src="Assest/Image/Posters/poster (4).jpg"
+                src="Assest/LowResImg/Posters/poster (4).jpg"
                 class="slider-image"
               />
             </label>
             <label class="slider-poster-container" for="sImg5" id="slider5">
               <img
-                src="Assest/Image/Posters/poster (5).jpg"
+                src="Assest/LowResImg/Posters/poster (5).jpg"
                 class="slider-image"
               />
             </label>
@@ -134,6 +141,7 @@
                   src="./Assest/LowResImg/latest release/Animal.jpg"
                   class="song-thumbnail-img"
                 />
+                <div class="song-thumbnail-img-overlay"></div>
               </div>
 
               <!-- Container for song details -->
@@ -196,13 +204,14 @@
               </div>
             </a>
 
-            <div class="song-thumbnail">
+            <a href="#play-audio" class="song-thumbnail">
               <!-- Main song thumbnail container -->
               <div class="song-thumbnail-img-container">
                 <img
                   src="./Assest/LowResImg/latest release/Bhediya-Hindi-2023-20230927155213-150x150.jpg"
                   class="song-thumbnail-img"
                 />
+                <div class="song-thumbnail-img-overlay"></div>
               </div>
 
               <!-- Container for song details -->
@@ -263,15 +272,16 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div class="song-thumbnail">
+            <a href="#play-audio" class="song-thumbnail">
               <!-- Main song thumbnail container -->
               <div class="song-thumbnail-img-container">
                 <img
                   src="./Assest/LowResImg/latest release/Jawan-Hindi-2023-20230921190854-150x150.jpg"
                   class="song-thumbnail-img"
                 />
+                <div class="song-thumbnail-img-overlay"></div>
               </div>
 
               <!-- Container for song details -->
@@ -332,15 +342,16 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div class="song-thumbnail">
+            <a href="#play-audio" class="song-thumbnail">
               <!-- Main song thumbnail container -->
               <div class="song-thumbnail-img-container">
                 <img
                   src="./Assest/LowResImg/latest release/Teri-Baaton-Mein-Aisa-Uljha-Jiya-Hindi-2024-20240205151011-150x150.jpg"
                   class="song-thumbnail-img"
                 />
+                <div class="song-thumbnail-img-overlay"></div>
               </div>
 
               <!-- Container for song details -->
@@ -401,7 +412,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </section>
 
@@ -413,7 +424,7 @@
           <div
             class="collection-content collection-content-justfy-Space-Between"
           >
-            <div class="artist-profile-thumbnail">
+            <a href="./artists.html" class="artist-profile-thumbnail">
               <div class="artist-profile">
                 <img
                   src="./Assest/LowResImg/Artiest/Arijit_Singh_002_20230323062147_500x500.jpg"
@@ -422,9 +433,9 @@
                 <div class="artist-overlay"></div>
               </div>
               <span class="artist-profile-name">Arijit Singh</span>
-            </div>
+            </a>
 
-            <div class="artist-profile-thumbnail">
+            <a href="./artists.html" class="artist-profile-thumbnail">
               <div class="artist-profile">
                 <img
                   src="./Assest/LowResImg/Artiest/Ed_Sheeran_500x500.jpg"
@@ -433,9 +444,9 @@
                 <div class="artist-overlay"></div>
               </div>
               <span class="artist-profile-name">Ed Sheeran</span>
-            </div>
+            </a>
 
-            <div class="artist-profile-thumbnail">
+            <a href="./artists.html" class="artist-profile-thumbnail">
               <div class="artist-profile">
                 <img
                   src="./Assest/LowResImg/Artiest/Armaan_Malik_004_20231026182653_500x500.jpg"
@@ -444,9 +455,9 @@
                 <div class="artist-overlay"></div>
               </div>
               <span class="artist-profile-name">Arman Malik</span>
-            </div>
+            </a>
 
-            <div class="artist-profile-thumbnail">
+            <a href="./artists.html" class="artist-profile-thumbnail">
               <div class="artist-profile">
                 <img
                   src="./Assest/LowResImg/Artiest/Shreya_Ghoshal_006_20240318080459_500x500.jpg"
@@ -455,9 +466,9 @@
                 <div class="artist-overlay"></div>
               </div>
               <span class="artist-profile-name">Shreya Ghoshal</span>
-            </div>
+            </a>
 
-            <div class="artist-profile-thumbnail">
+            <a href="./artists.html" class="artist-profile-thumbnail">
               <div class="artist-profile">
                 <img
                   src="./Assest/LowResImg/Artiest/Justin_Bieber_005_20201127112218_500x500.jpg"
@@ -466,9 +477,9 @@
                 <div class="artist-overlay"></div>
               </div>
               <span class="artist-profile-name">Justin Bieber</span>
-            </div>
+            </a>
 
-            <div class="artist-profile-thumbnail">
+            <a href="./artists.html" class="artist-profile-thumbnail">
               <div class="artist-profile">
                 <img
                   src="./Assest/LowResImg/Artiest/Sonu_Nigam_500x500.jpg"
@@ -477,7 +488,7 @@
                 <div class="artist-overlay"></div>
               </div>
               <span class="artist-profile-name">Sonu Nigam</span>
-            </div>
+            </a>
           </div>
         </section>
 
@@ -844,7 +855,7 @@
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
-                <p class="song-no">03</p>
+                <p class="song-no"><i class="fa-solid fa-chart-simple"></i></p>
                 <div class="song-img-container">
                   <img
                     src="./Assest/LowResImg/songs/Let_sPlayDojaCat_20231018051631_150x150.jpg"
@@ -1661,7 +1672,7 @@
                 <p class="song-no">32</p>
                 <div class="song-img-container">
                   <img
-                    src="./Assest/LowResImg/songs/output.txt"
+                    src="./Assest/LowResImg/songs/Vol-1-Music-from-the-HBO-Original-Series-English-2023-20230610103407-150x150.jpg"
                     class="song-img"
                   />
                   <div class="playlistItem-img-overlay"></div>
@@ -1849,7 +1860,7 @@
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
-                <p class="song-no">03</p>
+                <p class="song-no"><i class="fa-solid fa-chart-simple"></i></p>
                 <div class="song-img-container">
                   <img
                     src="./Assest/LowResImg/songs/Let_sPlayDojaCat_20231018051631_150x150.jpg"
@@ -2666,7 +2677,7 @@
                 <p class="song-no">32</p>
                 <div class="song-img-container">
                   <img
-                    src="./Assest/LowResImg/songs/output.txt"
+                    src="./Assest/LowResImg/songs/Lady-Lady-English-2018-20180905230524-150x150.jpg"
                     class="song-img"
                   />
                   <div class="playlistItem-img-overlay"></div>
