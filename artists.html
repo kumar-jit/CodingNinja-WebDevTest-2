@@ -1,873 +1,1407 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Music App</title>
+    <script
+      src="https://kit.fontawesome.com/3c83563040.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Music App</title>
-  <script src="https://kit.fontawesome.com/3c83563040.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./Css/style.css" type="text/css" />
+  </head>
 
-  <link rel="stylesheet" href="./Assest/fontawesome-free-6.5.2-web/css/all.css" type="text/css" />
-  <link rel="stylesheet" href="./Css/style.css" type="text/css" />
-</head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Nav Section                               -->
+    <!-- ----------------------------------------------------------------------- -->
 
-<body>
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                               Nav Section                               -->
-  <!-- ----------------------------------------------------------------------- -->
-
-  <nav class="nav-bar fade-effect-botoom">
-    
-    <!-- ---------------------------- nav left-Side ---------------------------- -->
-    <div class="nav-bar-inner-container nav-bar-left-container">
-      <!-- Nav Logo -->
-      <div class="nav-logo">
-        <img src="Assest/Image/Ninja Logo/logo.png" id="logo" />
-      </div>
-      <!-- Other List  like Favourites-->
-      <ul class="navBar-ul">
-        <li>
-          <a href="#" class="">Favorite</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- --------------------------- nav Right-Side ---------------------------- -->
-    <div class="nav-bar-inner-container nav-bar-right-container">
-      <!-- Search Box -->
-      <div class="nav-search-box">
-        <button><i class="fas fa-search"></i></button>
-        <input type="text" placeholder="Search" id="song-search" />
-        <button><i class="fas fa-microphone"></i></button>
+    <nav class="nav-bar fade-effect-botoom">
+      <!-- ---------------------------- nav left-Side ---------------------------- -->
+      <div class="nav-bar-inner-container nav-bar-left-container">
+        <!-- Nav Logo -->
+        <div class="nav-logo">
+          <img src="Assest/LowResImg/Ninja Logo/logo.png" id="logo" />
+        </div>
+        <!-- Other List  like Favourites-->
+        <ul class="navBar-ul">
+          <li>
+            <a href="#" class="">Favorite</a>
+          </li>
+        </ul>
       </div>
 
-      <!-- Notification -->
-      <button class="nav-notification"><i class="fas fa-bell"></i></button>
+      <!-- --------------------------- nav Right-Side ---------------------------- -->
+      <div class="nav-bar-inner-container nav-bar-right-container">
+        <!-- Search Box -->
+        <div class="nav-search-box">
+          <button><i class="fas fa-search"></i></button>
+          <input type="text" placeholder="Search" id="song-search" />
+          <button><i class="fas fa-microphone"></i></button>
+        </div>
 
-      <!-- User Profile -->
-      <div class="nav-user-profile">
-        <img src="./Assest/LowResImg/1.jpeg" class="user-profile-img" id="user-profile-img" />
+        <!-- Notification -->
+        <button class="nav-notification"><i class="fas fa-bell"></i></button>
+
+        <!-- User Profile -->
+        <div class="nav-user-profile">
+          <img
+            src="./Assest/LowResImg/profile.jpg"
+            class="user-profile-img"
+            id="user-profile-img"
+          />
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                                Main Body                                -->
-  <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Main Body                                -->
+    <!-- ----------------------------------------------------------------------- -->
 
-  <div class="main-body">
-    <div id="main-body-left" class="body-content-height scroll-content">
-    
-      <!-- --------------------------- Artists Poster --------------------------- -->
-      <section class="artists-poster">
-        <div class="card-box card-big">
-          <div class="card-box-img-container">
-            <div class="card-box-img"></div>
-            <!-- <img src="Assest/Image/Artiest/ab676161000051745e2e7e61d371b31ef6a8e935.jpg" class="card-box-img"> -->
-            <!-- <div class="card-img-overlay"></div> -->
-          </div>
-          <div class="card-box-info-content d-flex-c">
-            <div class="card-box-body-content">
-              <div class="card-box-head-container d-flex-r">
-                <div class="card-head-title-container d-flex-c">
-                  <h1 class="card-head-title">Black Pink</h1>
-                  <span class="card-subtitle">K-POP</span>
+    <div class="main-body">
+      <div id="main-body-left" class="body-content-height scroll-content">
+        <!-- --------------------------- Artists Poster --------------------------- -->
+        <section class="artists-poster">
+          <div class="card-box card-big">
+            <div class="card-box-img-container">
+              <div class="card-box-img"></div>
+              <!-- <img src="Assest/LowResImg/Artiest/ab676161000051745e2e7e61d371b31ef6a8e935.jpg" class="card-box-img"> -->
+              <!-- <div class="card-img-overlay"></div> -->
+            </div>
+            <div class="card-box-info-content d-flex-c">
+              <div class="card-box-body-content">
+                <div class="card-box-head-container d-flex-r">
+                  <div class="card-head-title-container d-flex-c">
+                    <h1 class="card-head-title">Black Pink</h1>
+                    <span class="card-subtitle">K-POP</span>
+                  </div>
+                  <p class="card-subtitle">52k Followers</p>
                 </div>
-                <p class="card-subtitle">52k Followers</p>
-              </div>
 
-              <div class="card-box-details-container">
-                <p class="card-box-text">
-                  BlackPink South Korean group formed in 2016. Jisoo (vocals),
-                  Jennie (rap), Rosé (vocals), Lisa (rap). They've achieved
-                  global success with their catchy music and dynamic
-                  performances and their stylish image, they've become
-                  influential figures in the K-pop industry.
-                </p>
+                <div class="card-box-details-container">
+                  <p class="card-box-text">
+                    BlackPink South Korean group formed in 2016. Jisoo (vocals),
+                    Jennie (rap), Rosé (vocals), Lisa (rap). They've achieved
+                    global success with their catchy music and dynamic
+                    performances and their stylish image, they've become
+                    influential figures in the K-pop industry.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="card-box-btn-container d-flex-r">
-              <button class="card-box-btn btn-bg-gradient">Play All</button>
-              <button class="card-box-btn">Follow</button>
-            </div>
-            <p class="card-other-info">247 Tracks | 128 Albums</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ---------------------------- Artists Songs ---------------------------- -->
-      <section class="artists-song-collection">
-        <div class="artists-music-collection-containt">
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">01</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Let-Me-Down-Slowly-English-2018-20190607042218-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
+              <div class="card-box-btn-container d-flex-r">
+                <button class="card-box-btn btn-bg-gradient">Play All</button>
+                <button class="card-box-btn">Follow</button>
               </div>
-              <div class="song-detail-container">
-                <span class="song-title">Let Me Down Slowly</span>
-                <span class="song-subtitle">Alec Benjamin</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">03:12</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <p class="card-other-info">247 Tracks | 128 Albums</p>
             </div>
           </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">02</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Let-s-Talk-About-Love-English-2006-20191031081854-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Let's Talk About Love</span>
-                <span class="song-subtitle">Celine Dion</span>
-              </div>
-            </div>
+        </section>
 
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">03:54</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+        <!-- ---------------------------- Artists Songs ---------------------------- -->
+        <section class="artists-song-collection">
+          <div class="artists-music-collection-containt">
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">01</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Let-Me-Down-Slowly-English-2018-20190607042218-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Let Me Down Slowly</span>
+                  <span class="song-subtitle">Alec Benjamin</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">08:37</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">02</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Let-s-Talk-About-Love-English-2006-20191031081854-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Let's Talk About Love</span>
+                  <span class="song-subtitle">Celine Dion</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">01:55</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">03</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Let_sPlayDojaCat_20231018051631_150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Let's Play</span>
+                  <span class="song-subtitle">Paul Hardcastle</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">06:32</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">04</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Pink Venom.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Lovin' On Me</span>
+                  <span class="song-subtitle">Diddy - Dirty Money</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">04:34</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">05</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Way Down We Go</span>
+                  <span class="song-subtitle">Kaleo</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">06:57</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">06</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/perfect.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Perfect</span>
+                  <span class="song-subtitle">Ed Sheren</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">01:03</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">07</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Pink Venom.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Pink Venom</span>
+                  <span class="song-subtitle">Black Pink</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">05:19</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">08</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/until i find you.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Until I Found You</span>
+                  <span class="song-subtitle">Stephen Sanchez</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">05:25</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">09</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/beliver.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Lover</span>
+                  <span class="song-subtitle">Taylor Shift</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">03:36</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">10</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">A Thousand Years</span>
+                  <span class="song-subtitle">Christina Perri</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">04:31</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">11</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/AfterDark_20220929060847_150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Afterdark</span>
+                  <span class="song-subtitle">Tito & Tarantula</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:57</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">12</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Afterlife (Deluxe)</span>
+                  <span class="song-subtitle">Avenged Sevenfold</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">04:55</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">13</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/All-the-Little-Lights-Deluxe-English-2019-20220615025427-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">All The Little Lights (Deluxe)</span>
+                  <span class="song-subtitle">Passenger</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">03:46</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">14</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/american-dream-English-2024-20240112000220-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">American Dream</span>
+                  <span class="song-subtitle">LCD Soundsystem</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">08:19</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">15</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Backslide-English-2024-20240425030143-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Backslide</span>
+                  <span class="song-subtitle">Rascal Flatts</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">06:18</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">16</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Beautiful-Things-English-2024-20240404023143-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Beautiful Things</span>
+                  <span class="song-subtitle">Ryan Corn</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">06:26</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">17</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/BestofHipHopEnglish_20240312052243_150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Best of Hip Hop</span>
+                  <span class="song-subtitle">Various Artists</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:23</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">18</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Bling-Bang-Bang-Born-Japanese-2024-20231211114637-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Bling Bang Bang Born</span>
+                  <span class="song-subtitle">Mondo Grosso</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">06:19</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">19</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Born-To-Die-The-Paradise-Edition-English-2012-20190420034558-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title"
+                    >Born To Die (The Paradise Edition)</span
+                  >
+                  <span class="song-subtitle">Lana Del Rey</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">04:44</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">20</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/bad habits.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Ckay: The First</span>
+                  <span class="song-subtitle">CKay</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">06:37</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">21</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Creatures-In-Heaven-English-2024-20240403213621-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Creatures In Heaven</span>
+                  <span class="song-subtitle">Craig Xen</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:44</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">22</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/D-anum-Serbian-2023-20230802184231-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">D Anum (Serbian)</span>
+                  <span class="song-subtitle">Dara Bubamara</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:16</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">23</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/bad habits.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Dandelions</span>
+                  <span class="song-subtitle">Ruth B.</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">01:53</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">24</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/bad habits.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Dark Matter</span>
+                  <span class="song-subtitle">Les Friction</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:01</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">25</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/beliver.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Decide</span>
+                  <span class="song-subtitle">Ckay</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:23</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">26</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Dreamland-English-2020-20200806000748-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Dreamland</span>
+                  <span class="song-subtitle">Glass Animals</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">07:44</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">27</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/EverlastingRomanceNewEnglish_20240201110022_150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Everlasting Romance</span>
+                  <span class="song-subtitle">Lukas Graham</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">01:53</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">28</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Mai meri.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Favorite</span>
+                  <span class="song-subtitle">Johnny Gill</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:10</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">29</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/February-Sky-English-2024-20240411053540-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">February Sky</span>
+                  <span class="song-subtitle">White Hart</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">07:55</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">30</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/beliver.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Feel Something</span>
+                  <span class="song-subtitle">Jaymes Young</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">05:00</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">31</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Fountain-Baby-Unknown-2023-20231117040822-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Fountain Baby</span>
+                  <span class="song-subtitle">Blue October</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">02:48</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">32</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Four (Deluxe)</span>
+                  <span class="song-subtitle">One Direction</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">03:01</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">33</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/HappyBirthdayRonanKeating_52583319_20160302_150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Happy Birthday Ronan Keating</span>
+                  <span class="song-subtitle">Ronan Keating</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">08:15</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+            <a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">34</p>
+                <div class="song-img-container">
+                  <img
+                    src="./Assest/LowResImg/songs/Harleys-In-Hawaii-English-2019-20191015230756-150x150.jpg"
+                    class="song-img"
+                  />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Harleys In Hawaii</span>
+                  <span class="song-subtitle">Katy Perry</span>
+                </div>
+              </div>
+
+              <!-- Button container -->
+              <div class="playlist-button-container">
+                <span class="song-duration">03:47</span>
+                <!-- Like button -->
+                <span class="song-like-button">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="song-like-button"
+                  ><i class="fa-solid fa-plus"></i
+                ></span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ----------------------- Similar Artists Mobile ------------------------ -->
+        <section class="art-right-side-mobile">
+          <div class="art-right-asid">
+            <div id="similar-art-container">
+              <section id="similar-artists" class="collection">
+                <div class="Queue-header-container">
+                  <div class="queue-header">
+                    <h3>Similar Artists</h3>
+                    <a class="view-all-btn"> VIew All </a>
+                  </div>
+                </div>
+                <div
+                  class="collection-content collection-content-justfy-Space-Between"
+                >
+                  <div class="song-thumbnail">
+                    <!-- Main song thumbnail container -->
+                    <div class="song-thumbnail-img-container">
+                      <img
+                        src="./Assest/LowResImg/latest release/Bhediya-Hindi-2023-20230927155213-150x150.jpg"
+                        class="song-thumbnail-img"
+                      />
+                    </div>
+
+                    <!-- Container for song details -->
+                    <div class="song-thumbnail-content">
+                      <div class="song-title-container">
+                        <p class="song-title-big">Apna Bana Le</p>
+                        <p class="song-other-title-small">4:21</p>
+                      </div>
+                      <span class="song-subtitle-big">NOV 24, 2022</span>
+                    </div>
+
+                    <!-- Container for menu button -->
+                    <div class="song-thumbnail-menu-button">
+                      <div class="menu-button">
+                        <!-- Checkbox for menu toggle -->
+                        <input type="checkbox" id="menu-checkbox-2" />
+                        <label
+                          for="menu-checkbox-2"
+                          class="custom-checkbox-label"
+                          ><i class="fas fa-ellipsis-h"></i
+                        ></label>
+
+                        <!-- Menu dialog box -->
+                        <div class="menu-dialogbox">
+                          <div class="menu-dialogbox-container">
+                            <!-- Menu items -->
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >play_arrow</span
+                                >
+                              </span>
+                              <span>Play Now</span>
+                            </div>
+                            <hr />
+                            <!-- Horizontal line separating menu items -->
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >add</span
+                                >
+                              </span>
+                              <span>Add to Queue</span>
+                            </div>
+                            <hr />
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >playlist_add</span
+                                >
+                              </span>
+                              <span>Add To Favourites</span>
+                            </div>
+                            <hr />
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >info</span
+                                >
+                              </span>
+                              <span>Get Info</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="song-thumbnail">
+                    <!-- Main song thumbnail container -->
+                    <div class="song-thumbnail-img-container">
+                      <img
+                        src="./Assest/LowResImg/latest release/Jawan-Hindi-2023-20230921190854-150x150.jpg"
+                        class="song-thumbnail-img"
+                      />
+                    </div>
+
+                    <!-- Container for song details -->
+                    <div class="song-thumbnail-content">
+                      <div class="song-title-container">
+                        <p class="song-title-big">Chaleya</p>
+                        <p class="song-other-title-small">3:20</p>
+                      </div>
+                      <span class="song-subtitle-big">SEP 07, 2023</span>
+                    </div>
+
+                    <!-- Container for menu button -->
+                    <div class="song-thumbnail-menu-button">
+                      <div class="menu-button">
+                        <!-- Checkbox for menu toggle -->
+                        <input type="checkbox" id="menu-checkbox-3" />
+                        <label
+                          for="menu-checkbox-3"
+                          class="custom-checkbox-label"
+                          ><i class="fas fa-ellipsis-h"></i
+                        ></label>
+
+                        <!-- Menu dialog box -->
+                        <div class="menu-dialogbox">
+                          <div class="menu-dialogbox-container">
+                            <!-- Menu items -->
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >play_arrow</span
+                                >
+                              </span>
+                              <span>Play Now</span>
+                            </div>
+                            <hr />
+                            <!-- Horizontal line separating menu items -->
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >add</span
+                                >
+                              </span>
+                              <span>Add to Queue</span>
+                            </div>
+                            <hr />
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >playlist_add</span
+                                >
+                              </span>
+                              <span>Add To Favourites</span>
+                            </div>
+                            <hr />
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >info</span
+                                >
+                              </span>
+                              <span>Get Info</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="song-thumbnail">
+                    <!-- Main song thumbnail container -->
+                    <div class="song-thumbnail-img-container">
+                      <img
+                        src="./Assest/LowResImg/latest release/Teri-Baaton-Mein-Aisa-Uljha-Jiya-Hindi-2024-20240205151011-150x150.jpg"
+                        class="song-thumbnail-img"
+                      />
+                    </div>
+
+                    <!-- Container for song details -->
+                    <div class="song-thumbnail-content">
+                      <div class="song-title-container">
+                        <p class="song-title-big">Teri Baaton Mein</p>
+                        <p class="song-other-title-small">2:51</p>
+                      </div>
+                      <span class="song-subtitle-big">FEB 09, 2024</span>
+                    </div>
+
+                    <!-- Container for menu button -->
+                    <div class="song-thumbnail-menu-button">
+                      <div class="menu-button">
+                        <!-- Checkbox for menu toggle -->
+                        <input type="checkbox" id="menu-checkbox-4" />
+                        <label
+                          for="menu-checkbox-4"
+                          class="custom-checkbox-label"
+                          ><i class="fas fa-ellipsis-h"></i
+                        ></label>
+
+                        <!-- Menu dialog box -->
+                        <div class="menu-dialogbox">
+                          <div class="menu-dialogbox-container">
+                            <!-- Menu items -->
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >play_arrow</span
+                                >
+                              </span>
+                              <span>Play Now</span>
+                            </div>
+                            <hr />
+                            <!-- Horizontal line separating menu items -->
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >add</span
+                                >
+                              </span>
+                              <span>Add to Queue</span>
+                            </div>
+                            <hr />
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >playlist_add</span
+                                >
+                              </span>
+                              <span>Add To Favourites</span>
+                            </div>
+                            <hr />
+                            <div class="menu-dialogbox-item">
+                              <span class="menu-dialogbox-item-icon">
+                                <span class="material-symbols-rounded"
+                                  >info</span
+                                >
+                              </span>
+                              <span>Get Info</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">03</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Let_sPlayDojaCat_20231018051631_150x150.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Let's Play</span>
-                <span class="song-subtitle">Paul Hardcastle</span>
-              </div>
-            </div>
+        </section>
+      </div>
 
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">08:52</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">04</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Pink Venom.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Lovin' On Me</span>
-                <span class="song-subtitle">Diddy - Dirty Money</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">05:49</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">05</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Way Down We Go</span>
-                <span class="song-subtitle">Kaleo</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">07:13</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">06</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/perfect.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Perfect</span>
-                <span class="song-subtitle">Ed Sheren</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:56</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">07</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Pink Venom.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Pink Venom</span>
-                <span class="song-subtitle">Black Pink</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">03:38</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">08</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/until i find you.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Until I Found You</span>
-                <span class="song-subtitle">Stephen Sanchez</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">03:36</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">09</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/beliver.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Lover</span>
-                <span class="song-subtitle">Taylor Shift</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">05:55</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">10</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">A Thousand Years</span>
-                <span class="song-subtitle">Christina Perri</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:17</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">11</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/AfterDark_20220929060847_150x150.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Afterdark</span>
-                <span class="song-subtitle">Tito & Tarantula</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">01:52</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">12</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Afterlife (Deluxe)</span>
-                <span class="song-subtitle">Avenged Sevenfold</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:17</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">13</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/All-the-Little-Lights-Deluxe-English-2019-20220615025427-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">All The Little Lights (Deluxe)</span>
-                <span class="song-subtitle">Passenger</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">01:50</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">14</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/american-dream-English-2024-20240112000220-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">American Dream</span>
-                <span class="song-subtitle">LCD Soundsystem</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:51</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">15</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Backslide-English-2024-20240425030143-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Backslide</span>
-                <span class="song-subtitle">Rascal Flatts</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">07:25</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">16</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Beautiful-Things-English-2024-20240404023143-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Beautiful Things</span>
-                <span class="song-subtitle">Ryan Corn</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">04:15</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">17</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/BestofHipHopEnglish_20240312052243_150x150.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Best of Hip Hop</span>
-                <span class="song-subtitle">Various Artists</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">04:32</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">18</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Bling-Bang-Bang-Born-Japanese-2024-20231211114637-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Bling Bang Bang Born</span>
-                <span class="song-subtitle">Mondo Grosso</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:53</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">19</p>
-              <div class="song-img-container">
-                <img
-                  src="./Assest/LowResImg/songs/Born-To-Die-The-Paradise-Edition-English-2012-20190420034558-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Born To Die (The Paradise Edition)</span>
-                <span class="song-subtitle">Lana Del Rey</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:01</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">20</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/bad habits.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Ckay: The First</span>
-                <span class="song-subtitle">CKay</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">04:25</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">21</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Creatures-In-Heaven-English-2024-20240403213621-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Creatures In Heaven</span>
-                <span class="song-subtitle">Craig Xen</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">04:18</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">22</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/D-anum-Serbian-2023-20230802184231-150x150.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">D Anum (Serbian)</span>
-                <span class="song-subtitle">Dara Bubamara</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">06:28</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">23</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/bad habits.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Dandelions</span>
-                <span class="song-subtitle">Ruth B.</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">05:12</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">24</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/bad habits.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Dark Matter</span>
-                <span class="song-subtitle">Les Friction</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">07:50</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">25</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/beliver.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Decide</span>
-                <span class="song-subtitle">Ckay</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">03:49</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">26</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Dreamland-English-2020-20200806000748-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Dreamland</span>
-                <span class="song-subtitle">Glass Animals</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">04:22</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">27</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/EverlastingRomanceNewEnglish_20240201110022_150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Everlasting Romance</span>
-                <span class="song-subtitle">Lukas Graham</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">07:37</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">28</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/Mai meri.jpg" class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">Favorite</span>
-                <span class="song-subtitle">Johnny Gill</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">04:38</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-          <div class="PlaylistItem">
-            <!-- Song details -->
-            <div class="song-thumb">
-              <!-- Song thumbnail and details -->
-              <p class="song-no">29</p>
-              <div class="song-img-container">
-                <img src="./Assest/LowResImg/songs/February-Sky-English-2024-20240411053540-150x150.jpg"
-                  class="song-img" />
-                <div class="playlistItem-img-overlay"></div>
-              </div>
-              <div class="song-detail-container">
-                <span class="song-title">February Sky</span>
-                <span class="song-subtitle">White Hart</span>
-              </div>
-            </div>
-
-            <!-- Button container -->
-            <div class="playlist-button-container">
-              <span class="song-duration">05:26</span>
-              <!-- Like button -->
-              <span class="song-like-button">
-                <i class="far fa-heart"></i>
-              </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ----------------------- Similar Artists Mobile ------------------------ -->
-      <section class="art-right-side-mobile">
+      <!-- ----------------------- Recently Palyed Mobile ------------------------ -->
+      <div id="main-body-right" class="body-content-height scroll-content">
         <div class="art-right-asid">
           <div id="similar-art-container">
             <section id="similar-artists" class="collection">
               <div class="Queue-header-container">
                 <div class="queue-header">
                   <h3>Similar Artists</h3>
-                  <a class="view-all-btn">
-                    VIew All
-                  </a>
+                  <a class="view-all-btn"> VIew All </a>
                 </div>
               </div>
-              <div class="collection-content collection-content-justfy-Space-Between">
+              <div
+                class="collection-content collection-content-justfy-Space-Between"
+              >
                 <div class="song-thumbnail">
                   <!-- Main song thumbnail container -->
                   <div class="song-thumbnail-img-container">
-                    <img src="./Assest/LowResImg/latest release/Bhediya-Hindi-2023-20230927155213-150x150.jpg"
-                      class="song-thumbnail-img" />
+                    <img
+                      src="./Assest/LowResImg/latest release/Bhediya-Hindi-2023-20230927155213-150x150.jpg"
+                      class="song-thumbnail-img"
+                    />
                   </div>
-  
+
                   <!-- Container for song details -->
                   <div class="song-thumbnail-content">
                     <div class="song-title-container">
@@ -876,21 +1410,25 @@
                     </div>
                     <span class="song-subtitle-big">NOV 24, 2022</span>
                   </div>
-  
+
                   <!-- Container for menu button -->
                   <div class="song-thumbnail-menu-button">
                     <div class="menu-button">
                       <!-- Checkbox for menu toggle -->
                       <input type="checkbox" id="menu-checkbox-2" />
-                      <label for="menu-checkbox-2" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-  
+                      <label for="menu-checkbox-2" class="custom-checkbox-label"
+                        ><i class="fas fa-ellipsis-h"></i
+                      ></label>
+
                       <!-- Menu dialog box -->
                       <div class="menu-dialogbox">
                         <div class="menu-dialogbox-container">
                           <!-- Menu items -->
                           <div class="menu-dialogbox-item">
                             <span class="menu-dialogbox-item-icon">
-                              <span class="material-symbols-rounded">play_arrow</span>
+                              <span class="material-symbols-rounded"
+                                >play_arrow</span
+                              >
                             </span>
                             <span>Play Now</span>
                           </div>
@@ -905,7 +1443,9 @@
                           <hr />
                           <div class="menu-dialogbox-item">
                             <span class="menu-dialogbox-item-icon">
-                              <span class="material-symbols-rounded">playlist_add</span>
+                              <span class="material-symbols-rounded"
+                                >playlist_add</span
+                              >
                             </span>
                             <span>Add To Favourites</span>
                           </div>
@@ -921,14 +1461,16 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="song-thumbnail">
                   <!-- Main song thumbnail container -->
                   <div class="song-thumbnail-img-container">
-                    <img src="./Assest/LowResImg/latest release/Jawan-Hindi-2023-20230921190854-150x150.jpg"
-                      class="song-thumbnail-img" />
+                    <img
+                      src="./Assest/LowResImg/latest release/Jawan-Hindi-2023-20230921190854-150x150.jpg"
+                      class="song-thumbnail-img"
+                    />
                   </div>
-  
+
                   <!-- Container for song details -->
                   <div class="song-thumbnail-content">
                     <div class="song-title-container">
@@ -937,21 +1479,25 @@
                     </div>
                     <span class="song-subtitle-big">SEP 07, 2023</span>
                   </div>
-  
+
                   <!-- Container for menu button -->
                   <div class="song-thumbnail-menu-button">
                     <div class="menu-button">
                       <!-- Checkbox for menu toggle -->
                       <input type="checkbox" id="menu-checkbox-3" />
-                      <label for="menu-checkbox-3" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-  
+                      <label for="menu-checkbox-3" class="custom-checkbox-label"
+                        ><i class="fas fa-ellipsis-h"></i
+                      ></label>
+
                       <!-- Menu dialog box -->
                       <div class="menu-dialogbox">
                         <div class="menu-dialogbox-container">
                           <!-- Menu items -->
                           <div class="menu-dialogbox-item">
                             <span class="menu-dialogbox-item-icon">
-                              <span class="material-symbols-rounded">play_arrow</span>
+                              <span class="material-symbols-rounded"
+                                >play_arrow</span
+                              >
                             </span>
                             <span>Play Now</span>
                           </div>
@@ -966,7 +1512,9 @@
                           <hr />
                           <div class="menu-dialogbox-item">
                             <span class="menu-dialogbox-item-icon">
-                              <span class="material-symbols-rounded">playlist_add</span>
+                              <span class="material-symbols-rounded"
+                                >playlist_add</span
+                              >
                             </span>
                             <span>Add To Favourites</span>
                           </div>
@@ -982,15 +1530,16 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="song-thumbnail">
                   <!-- Main song thumbnail container -->
                   <div class="song-thumbnail-img-container">
                     <img
                       src="./Assest/LowResImg/latest release/Teri-Baaton-Mein-Aisa-Uljha-Jiya-Hindi-2024-20240205151011-150x150.jpg"
-                      class="song-thumbnail-img" />
+                      class="song-thumbnail-img"
+                    />
                   </div>
-  
+
                   <!-- Container for song details -->
                   <div class="song-thumbnail-content">
                     <div class="song-title-container">
@@ -999,21 +1548,25 @@
                     </div>
                     <span class="song-subtitle-big">FEB 09, 2024</span>
                   </div>
-  
+
                   <!-- Container for menu button -->
                   <div class="song-thumbnail-menu-button">
                     <div class="menu-button">
                       <!-- Checkbox for menu toggle -->
                       <input type="checkbox" id="menu-checkbox-4" />
-                      <label for="menu-checkbox-4" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-  
+                      <label for="menu-checkbox-4" class="custom-checkbox-label"
+                        ><i class="fas fa-ellipsis-h"></i
+                      ></label>
+
                       <!-- Menu dialog box -->
                       <div class="menu-dialogbox">
                         <div class="menu-dialogbox-container">
                           <!-- Menu items -->
                           <div class="menu-dialogbox-item">
                             <span class="menu-dialogbox-item-icon">
-                              <span class="material-symbols-rounded">play_arrow</span>
+                              <span class="material-symbols-rounded"
+                                >play_arrow</span
+                              >
                             </span>
                             <span>Play Now</span>
                           </div>
@@ -1028,7 +1581,9 @@
                           <hr />
                           <div class="menu-dialogbox-item">
                             <span class="menu-dialogbox-item-icon">
-                              <span class="material-symbols-rounded">playlist_add</span>
+                              <span class="material-symbols-rounded"
+                                >playlist_add</span
+                              >
                             </span>
                             <span>Add To Favourites</span>
                           </div>
@@ -1046,517 +1601,338 @@
                 </div>
               </div>
             </section>
-  
           </div>
-        </div>
-      </section>
-    </div>
 
-    <!-- ----------------------- Recently Palyed Mobile ------------------------ -->
-    <div id="main-body-right" class="body-content-height scroll-content">
-      <div class="art-right-asid">
-        <div id="similar-art-container">
-          <section id="similar-artists" class="collection">
-            <div class="Queue-header-container">
-              <div class="queue-header">
-                <h3>Similar Artists</h3>
-                <a class="view-all-btn">
-                  VIew All
+          <div id="recent-play-container">
+            <div id="recent-play" class="collection">
+              <div class="Queue-header-container">
+                <div class="queue-header">
+                  <h3>Recently Played</h3>
+                  <a class="view-all-btn"> VIew All </a>
+                </div>
+              </div>
+              <div>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">05</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Way Down We Go</span>
+                      <span class="song-subtitle">Kaleo</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">
+                      <i class="fa-solid fa-chart-simple"></i>
+                    </p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/perfect.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Perfect</span>
+                      <span class="song-subtitle">Ed Sheren</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">07</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/Pink Venom.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Pink Venom</span>
+                      <span class="song-subtitle">Black Pink</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">08</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/until i find you.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Until I Found You</span>
+                      <span class="song-subtitle">Stephen Sanchez</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">09</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/beliver.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Lover</span>
+                      <span class="song-subtitle">Taylor Shift</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">10</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">A Thousand Years</span>
+                      <span class="song-subtitle">Christina Perri</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">11</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/AfterDark_20220929060847_150x150.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Afterdark</span>
+                      <span class="song-subtitle">Tito & Tarantula</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">12</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Afterlife (Deluxe)</span>
+                      <span class="song-subtitle">Avenged Sevenfold</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">13</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/All-the-Little-Lights-Deluxe-English-2019-20220615025427-150x150.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title"
+                        >All The Little Lights (Deluxe)</span
+                      >
+                      <span class="song-subtitle">Passenger</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">14</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/american-dream-English-2024-20240112000220-150x150.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">American Dream</span>
+                      <span class="song-subtitle">LCD Soundsystem</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
+                </a>
+
+                <a class="PlaylistItem" href="#play-audio">
+                  <!-- Song details -->
+                  <div class="song-thumb">
+                    <!-- Song thumbnail and details -->
+                    <p class="song-no">20</p>
+                    <div class="song-img-container">
+                      <img
+                        src="./Assest/LowResImg/songs/bad habits.jpg"
+                        class="song-img"
+                      />
+                      <div class="playlistItem-img-overlay"></div>
+                    </div>
+                    <div class="song-detail-container">
+                      <span class="song-title">Ckay: The First</span>
+                      <span class="song-subtitle">CKay</span>
+                    </div>
+                  </div>
+
+                  <!-- Button container -->
+                  <div class="playlist-button-container">
+                    <!-- <span class="song-duration"></span> -->
+                    <!-- Like button -->
+                    <span class="song-like-button">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+                  </div>
                 </a>
               </div>
-            </div>
-            <div class="collection-content collection-content-justfy-Space-Between">
-              <div class="song-thumbnail">
-                <!-- Main song thumbnail container -->
-                <div class="song-thumbnail-img-container">
-                  <img src="./Assest/LowResImg/latest release/Bhediya-Hindi-2023-20230927155213-150x150.jpg"
-                    class="song-thumbnail-img" />
-                </div>
-
-                <!-- Container for song details -->
-                <div class="song-thumbnail-content">
-                  <div class="song-title-container">
-                    <p class="song-title-big">Apna Bana Le</p>
-                    <p class="song-other-title-small">4:21</p>
-                  </div>
-                  <span class="song-subtitle-big">NOV 24, 2022</span>
-                </div>
-
-                <!-- Container for menu button -->
-                <div class="song-thumbnail-menu-button">
-                  <div class="menu-button">
-                    <!-- Checkbox for menu toggle -->
-                    <input type="checkbox" id="menu-checkbox-2" />
-                    <label for="menu-checkbox-2" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-
-                    <!-- Menu dialog box -->
-                    <div class="menu-dialogbox">
-                      <div class="menu-dialogbox-container">
-                        <!-- Menu items -->
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">play_arrow</span>
-                          </span>
-                          <span>Play Now</span>
-                        </div>
-                        <hr />
-                        <!-- Horizontal line separating menu items -->
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">add</span>
-                          </span>
-                          <span>Add to Queue</span>
-                        </div>
-                        <hr />
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">playlist_add</span>
-                          </span>
-                          <span>Add To Favourites</span>
-                        </div>
-                        <hr />
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">info</span>
-                          </span>
-                          <span>Get Info</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="song-thumbnail">
-                <!-- Main song thumbnail container -->
-                <div class="song-thumbnail-img-container">
-                  <img src="./Assest/LowResImg/latest release/Jawan-Hindi-2023-20230921190854-150x150.jpg"
-                    class="song-thumbnail-img" />
-                </div>
-
-                <!-- Container for song details -->
-                <div class="song-thumbnail-content">
-                  <div class="song-title-container">
-                    <p class="song-title-big">Chaleya</p>
-                    <p class="song-other-title-small">3:20</p>
-                  </div>
-                  <span class="song-subtitle-big">SEP 07, 2023</span>
-                </div>
-
-                <!-- Container for menu button -->
-                <div class="song-thumbnail-menu-button">
-                  <div class="menu-button">
-                    <!-- Checkbox for menu toggle -->
-                    <input type="checkbox" id="menu-checkbox-3" />
-                    <label for="menu-checkbox-3" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-
-                    <!-- Menu dialog box -->
-                    <div class="menu-dialogbox">
-                      <div class="menu-dialogbox-container">
-                        <!-- Menu items -->
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">play_arrow</span>
-                          </span>
-                          <span>Play Now</span>
-                        </div>
-                        <hr />
-                        <!-- Horizontal line separating menu items -->
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">add</span>
-                          </span>
-                          <span>Add to Queue</span>
-                        </div>
-                        <hr />
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">playlist_add</span>
-                          </span>
-                          <span>Add To Favourites</span>
-                        </div>
-                        <hr />
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">info</span>
-                          </span>
-                          <span>Get Info</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="song-thumbnail">
-                <!-- Main song thumbnail container -->
-                <div class="song-thumbnail-img-container">
-                  <img
-                    src="./Assest/LowResImg/latest release/Teri-Baaton-Mein-Aisa-Uljha-Jiya-Hindi-2024-20240205151011-150x150.jpg"
-                    class="song-thumbnail-img" />
-                </div>
-
-                <!-- Container for song details -->
-                <div class="song-thumbnail-content">
-                  <div class="song-title-container">
-                    <p class="song-title-big">Teri Baaton Mein</p>
-                    <p class="song-other-title-small">2:51</p>
-                  </div>
-                  <span class="song-subtitle-big">FEB 09, 2024</span>
-                </div>
-
-                <!-- Container for menu button -->
-                <div class="song-thumbnail-menu-button">
-                  <div class="menu-button">
-                    <!-- Checkbox for menu toggle -->
-                    <input type="checkbox" id="menu-checkbox-4" />
-                    <label for="menu-checkbox-4" class="custom-checkbox-label"><i class="fas fa-ellipsis-h"></i></label>
-
-                    <!-- Menu dialog box -->
-                    <div class="menu-dialogbox">
-                      <div class="menu-dialogbox-container">
-                        <!-- Menu items -->
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">play_arrow</span>
-                          </span>
-                          <span>Play Now</span>
-                        </div>
-                        <hr />
-                        <!-- Horizontal line separating menu items -->
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">add</span>
-                          </span>
-                          <span>Add to Queue</span>
-                        </div>
-                        <hr />
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">playlist_add</span>
-                          </span>
-                          <span>Add To Favourites</span>
-                        </div>
-                        <hr />
-                        <div class="menu-dialogbox-item">
-                          <span class="menu-dialogbox-item-icon">
-                            <span class="material-symbols-rounded">info</span>
-                          </span>
-                          <span>Get Info</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        </div>
-
-        <div id="recent-play-container">
-          <div id="recent-play" class="collection">
-            <div class="Queue-header-container">
-              <div class="queue-header">
-                <h3>Recently Played</h3>
-                <a class="view-all-btn">
-                  VIew All
-                </a>
-              </div>
-            </div>
-            <div>
-
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">05</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
-                      class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Way Down We Go</span>
-                    <span class="song-subtitle">Kaleo</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">06</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/perfect.jpg" class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Perfect</span>
-                    <span class="song-subtitle">Ed Sheren</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">07</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/Pink Venom.jpg" class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Pink Venom</span>
-                    <span class="song-subtitle">Black Pink</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">08</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/until i find you.jpg" class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Until I Found You</span>
-                    <span class="song-subtitle">Stephen Sanchez</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">09</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/beliver.jpg" class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Lover</span>
-                    <span class="song-subtitle">Taylor Shift</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">10</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
-                      class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">A Thousand Years</span>
-                    <span class="song-subtitle">Christina Perri</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">11</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/AfterDark_20220929060847_150x150.jpg" class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Afterdark</span>
-                    <span class="song-subtitle">Tito & Tarantula</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">12</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
-                      class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Afterlife (Deluxe)</span>
-                    <span class="song-subtitle">Avenged Sevenfold</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">13</p>
-                  <div class="song-img-container">
-                    <img
-                      src="./Assest/LowResImg/songs/All-the-Little-Lights-Deluxe-English-2019-20220615025427-150x150.jpg"
-                      class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">All The Little Lights (Deluxe)</span>
-                    <span class="song-subtitle">Passenger</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">14</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/american-dream-English-2024-20240112000220-150x150.jpg"
-                      class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">American Dream</span>
-                    <span class="song-subtitle">LCD Soundsystem</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
-
-              <a class="PlaylistItem" href="#play-audio">
-                <!-- Song details -->
-                <div class="song-thumb">
-                  <!-- Song thumbnail and details -->
-                  <p class="song-no">20</p>
-                  <div class="song-img-container">
-                    <img src="./Assest/LowResImg/songs/bad habits.jpg" class="song-img" />
-                    <div class="playlistItem-img-overlay"></div>
-                  </div>
-                  <div class="song-detail-container">
-                    <span class="song-title">Ckay: The First</span>
-                    <span class="song-subtitle">CKay</span>
-                  </div>
-                </div>
-
-                <!-- Button container -->
-                <div class="playlist-button-container">
-                  <!-- <span class="song-duration"></span> -->
-                  <!-- Like button -->
-                  <span class="song-like-button">
-                    <i class="far fa-heart"></i>
-                  </span>
-                  <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
-                </div>
-              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  </div>
-
-  <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
     <!--                         Recent played mobile device                         -->
     <!-- ----------------------------------------------------------------------- -->
     <div id="queue-for-mobile">
@@ -1582,16 +1958,16 @@
             </div>
           </div>
           <div class="queue-mbs-container scroll-content">
-            
-  
             <a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
                 <p class="song-no">05</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
-                    class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/Way-Down-We-Go-English-2015-20190607044003-150x150.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1616,7 +1992,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">06</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/perfect.jpg" class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/perfect.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1639,9 +2018,12 @@
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
-                <p class="song-no">07</p>
+                <p class="song-no"><i class="fa-solid fa-chart-simple"></i></p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/Pink Venom.jpg" class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/Pink Venom.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1666,7 +2048,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">08</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/until i find you.jpg" class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/until i find you.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1691,7 +2076,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">09</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/beliver.jpg" class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/beliver.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1716,8 +2104,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">10</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
-                    class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/A-Thousand-Years-English-2011-20200822053427-150x150.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1742,7 +2132,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">11</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/AfterDark_20220929060847_150x150.jpg" class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/AfterDark_20220929060847_150x150.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1767,8 +2160,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">12</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
-                    class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/AfterLife-Deluxe-English-2024-20240329050351-150x150.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1795,7 +2190,8 @@
                 <div class="song-img-container">
                   <img
                     src="./Assest/LowResImg/songs/All-the-Little-Lights-Deluxe-English-2019-20220615025427-150x150.jpg"
-                    class="song-img" />
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1820,8 +2216,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">14</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/american-dream-English-2024-20240112000220-150x150.jpg"
-                    class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/american-dream-English-2024-20240112000220-150x150.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1847,7 +2245,10 @@
                 <!-- Song thumbnail and details -->
                 <p class="song-no">20</p>
                 <div class="song-img-container">
-                  <img src="./Assest/LowResImg/songs/bad habits.jpg" class="song-img" />
+                  <img
+                    src="./Assest/LowResImg/songs/bad habits.jpg"
+                    class="song-img"
+                  />
                   <div class="playlistItem-img-overlay"></div>
                 </div>
                 <div class="song-detail-container">
@@ -1866,96 +2267,115 @@
                 <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
               </div>
             </a>
-          
           </div>
         </div>
       </div>
     </div>
 
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                              Audio player                               -->
-  <!-- ----------------------------------------------------------------------- -->
-  <footer class="audio-player" id="play-audio">
-    <div class="audio-player-container">
-      <!-- Audio Information Section -->
-      <div class="audio-information">
-        <div class="playlist-item-content">
-          <!-- Song details -->
-          <div class="song-thumb">
-            <div class="song-img-container">
-              <img src="./Assest/LowResImg/songs/Pink Venom.jpg" class="song-img-mid" />
-            </div>
-            <div class="song-detail-container">
-              <marquee class="song-title-big" direction="left" scrollamount="3">
-                Pink Venom
-              </marquee>
-              <span class="song-subtitle">Black Pink</span>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Audio player                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="audio-player" id="play-audio">
+      <div class="audio-player-container">
+        <!-- Audio Information Section -->
+        <div class="audio-information">
+          <div class="playlist-item-content">
+            <!-- Song details -->
+            <div class="song-thumb">
+              <div class="song-img-container">
+                <img
+                  src="./Assest/LowResImg/songs/Pink Venom.jpg"
+                  class="song-img-mid"
+                />
+              </div>
+              <div class="song-detail-container">
+                <marquee
+                  class="song-title-big"
+                  direction="left"
+                  scrollamount="3"
+                >
+                  Pink Venom
+                </marquee>
+                <span class="song-subtitle">Black Pink</span>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Button container -->
-        <div class="playlist-button-container">
-          <!-- Like button -->
-          <span class="song-like-button">
-            <i class="far fa-heart"></i>
-          </span>
-          <span class="song-like-button">
-            <i class="fa-solid fa-ban"></i>
-          </span>
-        </div>
-      </div>
-
-      <!-- Music Player Controls Section -->
-      <div class="music-player-controls">
-        <div class="music-controller-btns">
-          <button class="audio-button" id="shuffle-btn">
-            <i class="fas fa-random"></i>
-          </button>
-          <button class="audio-button" id="prev-btn">
-            <span class="material-symbols-outlined"> skip_previous </span>
-          </button>
-          <button class="audio-button" id="play-btn">
-            <span class="material-symbols-outlined">pause_circle</span>
-          </button>
-          <button class="audio-button" id="nxt-btn">
-            <span class="material-symbols-outlined"> skip_next </span>
-          </button>
-          <button class="audio-button" id="repeat-btn">
-            <span class="material-symbols-outlined"> repeat </span>
-          </button>
-        </div>
-        <div class="duration-tracker">
-          <span class="current-time">1:39</span>
-          <div class="song-progress-slider">
-            <input type="range" min="1" max="100" value="50" class="slider" id="song-progress" />
+          <!-- Button container -->
+          <div class="playlist-button-container">
+            <!-- Like button -->
+            <span class="song-like-button">
+              <i class="far fa-heart"></i>
+            </span>
+            <span class="song-like-button">
+              <i class="fa-solid fa-ban"></i>
+            </span>
           </div>
-          <span class="total-duration">4:44</span>
+        </div>
+
+        <!-- Music Player Controls Section -->
+        <div class="music-player-controls">
+          <div class="music-controller-btns">
+            <button class="audio-button" id="shuffle-btn">
+              <i class="fas fa-random"></i>
+            </button>
+            <button class="audio-button" id="prev-btn">
+              <span class="material-symbols-outlined"> skip_previous </span>
+            </button>
+            <button class="audio-button" id="play-btn">
+              <span class="material-symbols-outlined">pause_circle</span>
+            </button>
+            <button class="audio-button" id="nxt-btn">
+              <span class="material-symbols-outlined"> skip_next </span>
+            </button>
+            <button class="audio-button" id="repeat-btn">
+              <span class="material-symbols-outlined"> repeat </span>
+            </button>
+          </div>
+          <div class="duration-tracker">
+            <span class="current-time">1:39</span>
+            <div class="song-progress-slider">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider"
+                id="song-progress"
+              />
+            </div>
+            <span class="total-duration">4:44</span>
+          </div>
+        </div>
+
+        <!-- Other Audio Controllers Section -->
+        <div class="other-controllers">
+          <div class="other-btn-div">
+            <button class="audio-button">
+              <span class="material-symbols-outlined"> playlist_play </span>
+            </button>
+          </div>
+          <div class="other-btn-div">
+            <button class="audio-button"><i class="fas fa-laptop"></i></button>
+          </div>
+
+          <div class="volume-slider">
+            <span class="audio-button"><i class="fas fa-volume-up"></i></span>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="volume-slider"
+            />
+          </div>
+          <div class="other-btn-div">
+            <button class="audio-button" id="expand-audio">
+              <i class="fas fa-expand-alt"></i>
+            </button>
+          </div>
         </div>
       </div>
-
-      <!-- Other Audio Controllers Section -->
-      <div class="other-controllers">
-        <div class="other-btn-div">
-          <button class="audio-button">
-            <span class="material-symbols-outlined"> playlist_play </span>
-          </button>
-        </div>
-        <div class="other-btn-div">
-          <button class="audio-button"><i class="fas fa-laptop"></i></button>
-        </div>
-
-        <div class="volume-slider">
-          <span class="audio-button"><i class="fas fa-volume-up"></i></span>
-          <input type="range" min="1" max="100" value="50" class="slider" id="volume-slider" />
-        </div>
-        <div class="other-btn-div">
-          <button class="audio-button" id="expand-audio">
-            <i class="fas fa-expand-alt"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
