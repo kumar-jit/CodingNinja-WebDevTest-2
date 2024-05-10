@@ -87,7 +87,7 @@
     /* bottom fade effect height */
     --bottom-fade-effect-height: 2rem;
 
-    --sim-art-height-rem: calc(100vh - var(--used--height-body));
+    --art-page-right-height-rem: calc(100vh - var(--used--height-body));
 }
 
 
@@ -104,6 +104,13 @@ html, body{
 body > *{
     transition: all 0.8s ease-in-out;
     scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
 }
 
 /* ############################################################################################################################ */
@@ -245,7 +252,6 @@ body > *{
     height: 0px; /* removing scrollbar hight space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
 
 
 
@@ -853,6 +859,15 @@ body > *{
 .queue-header h1{
     color: var(--primary-font-color);
 }
+.queue-header h2{
+    margin: 0px;
+    padding: 0px;
+}
+.queue-header h3{
+    margin: 0px;
+    padding: 0px;
+}
+
 .queue-header .menu-button .custom-checkbox-label {
     color: #0ad4a9;
 }
@@ -1008,17 +1023,25 @@ body > *{
 .song-duration{
     margin-right: 1rem !important;
 }
+
+
 /* --------------------------- audio-player-Footer -------------------------- */
 
-
-.audio-player{
+#play-audio{
     width: 100vw;
     position: fixed;
     bottom: 0;
     background-color: var(--fifth-color); 
-    height: var(--footer-height-rem);
+    height: 0px;
     margin: 0px;
     padding: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#play-audio:target{
+    height: var(--footer-height-rem);
+    visibility: visible;
 }
 
 .audio-player-container{
@@ -1028,6 +1051,7 @@ body > *{
     align-items: center;
     margin: 0 3%;
     height: inherit;
+    visibility: inherit;
 }
 
 /* Music information */
@@ -1313,24 +1337,53 @@ body > *{
 }
 
 .art-right-asid{
-    height: var(--sim-art-height-rem);
+    /* height: var(--art-page-right-height-rem); */
     width: 100%;
-    border: 1px solid rgb(235, 212, 13);
+    display: block;
+    margin-top: 0.5rem;
+}
+#similar-art-container{
+    /* height: calc(var(--art-page-right-height-rem) - 60%); */
+    display: block;
+    padding: 0px;
+    margin: 0px;
 }
 
-.similar-art-container{
-    height: 40%;
-    width: 100%;
-    border: 1px solid white;
+#similar-art-container > .collection > .collection-content{
+    flex-wrap: wrap;
 }
+
+#similar-art-container > .collection > .collection-content > .song-thumbnail{
+    width: 100%;
+}
+#similar-art-container > .collection > .collection-content > .song-thumbnail > .song-thumbnail-img-container{
+    width: 22%;
+}
+
+#similar-art-container > .collection > .collection-content > .song-thumbnail > .song-thumbnail-img-container > .song-thumbnail-img{
+    width: 100%;
+    height:100%; 
+}
+
 .recent-play-container{
-    height: 55%;
-    width: 100%;
-    border: 1px solid white;
+    /* height: calc(var(--art-page-right-height-rem) - 40%); */
+    display: block;
+    padding: 0px;
+    margin: 0px;
 }
 
 
+#similar-artists > .Queue-header-container, #recent-play > .Queue-header-container {
+    height: 2.5rem;
+}
 
+.view-all-btn{
+    color: var(--secondary-font-color);
+}
+
+.art-right-side-mobile{
+    display: none;
+}
 
 
 
@@ -1398,6 +1451,14 @@ body > *{
     display: flex;
     justify-content: start;
     align-items: center;
+  }
+
+
+
+
+  /* Mobile Queue Container hiding for normal scrren */
+  #queue-for-mobile{
+    visibility: hidden;
   }
 
 
@@ -1479,6 +1540,11 @@ body > *{
     }
 
     /* ------------------------------- Song Queue Mobile ------------------------------- */
+     /* Mobile Queue Container displaying for normal scrren */
+    #queue-for-mobile{
+        visibility: visible;
+    }
+    
     /* Hide the main body right section */
     #main-body-right{
         display: none;
@@ -1505,7 +1571,7 @@ body > *{
     /* Queue mobile sidebar container */
     #queue-for-mobile .queue-mobile-sidebar-container{
         width: 300px;
-        background-color: var(--fourth-color);
+        background-color: var(--secondary-color);
         max-width: 80%;
         padding: 0px 1rem;
         padding-bottom: 2rem;
@@ -1516,7 +1582,7 @@ body > *{
 
     /* Queue mobile open button */
     .queue-mobile-open-btn{
-        background-color: var(--fourth-color);
+        background-color: var(--secondary-color);
         height: max-content;
         width: max-content;
         cursor: pointer;
@@ -1579,6 +1645,7 @@ body > *{
         margin: 2px;
         box-sizing: border-box;
         border-bottom:1px solid white;
+        height: 2rem;
     }
 
     /* Queue mobile sidebar main content style */
@@ -1712,6 +1779,11 @@ body > *{
      .card-box-img{
         background-image: url('../Assest/Image/bp11.jpg');
     }
+    /* Similar Artists mobile */
+    .art-right-side-mobile{
+        display: block;
+    }
+    
 
 }
 

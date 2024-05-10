@@ -1,4 +1,4 @@
-<div class="PlaylistItem">
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -15,15 +15,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">03:12</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -40,15 +40,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">03:54</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -65,15 +65,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">08:52</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -90,15 +90,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">05:49</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -115,15 +115,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">07:13</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -140,15 +140,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:56</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -165,15 +165,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">03:38</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -190,15 +190,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">03:36</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -215,15 +215,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">05:55</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -240,15 +240,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:17</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -265,15 +265,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">01:52</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -290,15 +290,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:17</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -315,15 +315,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">01:50</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -340,15 +340,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:51</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -365,15 +365,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">07:25</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -390,15 +390,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">04:15</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -415,15 +415,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">04:32</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -440,15 +440,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:53</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -465,15 +465,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:01</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -490,15 +490,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">04:25</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -515,15 +515,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">04:18</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -540,15 +540,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">06:28</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -565,15 +565,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">05:12</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -590,15 +590,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">07:50</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -615,15 +615,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">03:49</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -640,15 +640,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">04:22</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -665,15 +665,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">07:37</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -690,15 +690,15 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">04:38</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
-<div class="PlaylistItem">
+          </a>
+<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -715,11 +715,136 @@
             
             <!-- Button container -->
             <div class="playlist-button-container">
-              <span class="song-duration">05:26</span>
+              <!-- <span class="song-duration"></span> -->
               <!-- Like button -->
               <span class="song-like-button">
                 <i class="far fa-heart"></i>
               </span>
-              <span class="song-like-button"><i class="fa-solid fa-plus"></i></span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
             </div>
-          </div>
+          </a>
+<a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">30</p>
+                <div class="song-img-container">
+                  <img src="./Assest/LowResImg/songs/beliver.jpg" class="song-img" />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Feel Something</span>
+                  <span class="song-subtitle">Jaymes Young</span>
+                </div>
+              </div>
+            
+            <!-- Button container -->
+            <div class="playlist-button-container">
+              <!-- <span class="song-duration"></span> -->
+              <!-- Like button -->
+              <span class="song-like-button">
+                <i class="far fa-heart"></i>
+              </span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+            </div>
+          </a>
+<a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">31</p>
+                <div class="song-img-container">
+                  <img src="./Assest/LowResImg/songs/Fountain-Baby-Unknown-2023-20231117040822-150x150.jpg" class="song-img" />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Fountain Baby</span>
+                  <span class="song-subtitle">Blue October</span>
+                </div>
+              </div>
+            
+            <!-- Button container -->
+            <div class="playlist-button-container">
+              <!-- <span class="song-duration"></span> -->
+              <!-- Like button -->
+              <span class="song-like-button">
+                <i class="far fa-heart"></i>
+              </span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+            </div>
+          </a>
+<a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">32</p>
+                <div class="song-img-container">
+                  <img src="./Assest/LowResImg/songs/output.txt" class="song-img" />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Four (Deluxe)</span>
+                  <span class="song-subtitle">One Direction</span>
+                </div>
+              </div>
+            
+            <!-- Button container -->
+            <div class="playlist-button-container">
+              <!-- <span class="song-duration"></span> -->
+              <!-- Like button -->
+              <span class="song-like-button">
+                <i class="far fa-heart"></i>
+              </span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+            </div>
+          </a>
+<a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">33</p>
+                <div class="song-img-container">
+                  <img src="./Assest/LowResImg/songs/HappyBirthdayRonanKeating_52583319_20160302_150x150.jpg" class="song-img" />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Happy Birthday Ronan Keating</span>
+                  <span class="song-subtitle">Ronan Keating</span>
+                </div>
+              </div>
+            
+            <!-- Button container -->
+            <div class="playlist-button-container">
+              <!-- <span class="song-duration"></span> -->
+              <!-- Like button -->
+              <span class="song-like-button">
+                <i class="far fa-heart"></i>
+              </span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+            </div>
+          </a>
+<a class="PlaylistItem" href="#play-audio">
+              <!-- Song details -->
+              <div class="song-thumb">
+                <!-- Song thumbnail and details -->
+                <p class="song-no">34</p>
+                <div class="song-img-container">
+                  <img src="./Assest/LowResImg/songs/Harleys-In-Hawaii-English-2019-20191015230756-150x150.jpg" class="song-img" />
+                  <div class="playlistItem-img-overlay"></div>
+                </div>
+                <div class="song-detail-container">
+                  <span class="song-title">Harleys In Hawaii</span>
+                  <span class="song-subtitle">Katy Perry</span>
+                </div>
+              </div>
+            
+            <!-- Button container -->
+            <div class="playlist-button-container">
+              <!-- <span class="song-duration"></span> -->
+              <!-- Like button -->
+              <span class="song-like-button">
+                <i class="far fa-heart"></i>
+              </span>
+              <!-- <span class="song-like-button"><i class="fa-solid fa-plus"></i></span> -->
+            </div>
+          </a>

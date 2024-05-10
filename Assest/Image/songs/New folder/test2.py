@@ -8,7 +8,7 @@ def closest_match(file_name, song_names):
     return matches[0] if matches else None
 
 def generate_template(file_names, song_artists, include_duration,include_add_btn):
-    template = '''<div class="PlaylistItem">
+    template = '''<a class="PlaylistItem" href="#play-audio">
               <!-- Song details -->
               <div class="song-thumb">
                 <!-- Song thumbnail and details -->
@@ -32,7 +32,7 @@ def generate_template(file_names, song_artists, include_duration,include_add_btn
               </span>
               {song_add_btn}
             </div>
-          </div>\n'''
+          </a>\n'''
 
     templates = []
     for index, song_artist in enumerate(song_artists, start=1):
@@ -101,8 +101,8 @@ def main():
         
     ]
     
-    include_duration = True  # Change this to False if you want to comment out the duration line
-    include_add_btn = True
+    include_duration = False  # Change this to False if you want to comment out the duration line
+    include_add_btn = False
 
     templates = generate_template(file_names, song_artists, include_duration,include_add_btn)
     output_file_path = os.path.join(folder_path, "output.txt")
